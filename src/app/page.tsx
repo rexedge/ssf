@@ -1,113 +1,61 @@
-import Image from 'next/image'
+import Image from 'next/image';
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+	return (
+		<main className='flex min-h-screen flex-col p-10'>
+			Bildove Financial Services - Empowering Your Financial Future
+			[Hero Image: An engaging and relatable image that represents
+			financial success or a happy family] Welcome to Bildove Financial
+			Services, your trusted partner in achieving financial security
+			and building a prosperous future. We are dedicated to providing
+			you with the knowledge, tools, and products necessary to navigate
+			the complexities of the financial world. [Section 1:
+			Introduction] At Bildove Financial Services, we understand that
+			financial well-being is a top priority for individuals and
+			families. Our comprehensive approach focuses on empowering you
+			with the insights and strategies needed to make informed
+			financial decisions. Whether you're seeking to protect your
+			income, grow your wealth, or plan for a secure retirement, we're
+			here to guide you every step of the way. [Section 2: Key
+			Benefits] Expertise and Guidance: Our team of financial experts
+			brings years of industry experience to help you navigate the
+			ever-changing financial landscape. We stay up-to-date with the
+			latest trends, regulations, and strategies, ensuring that you
+			receive accurate and personalized advice tailored to your unique
+			needs. Comprehensive Services: From understanding the rules of
+			money to protecting your assets and planning for the future, we
+			cover a wide range of topics. Our services encompass income
+			protection, tax advantages, legacy planning, and more. Whatever
+			your financial goals may be, we have the expertise and resources
+			to help you achieve them. Tailored Solutions: We recognize that
+			every individual's financial situation is unique. That's why we
+			offer personalized solutions that align with your specific needs,
+			risk tolerance, and aspirations. Our goal is to create a
+			customized roadmap that leads you towards financial success and
+			peace of mind. [Section 3: Call-to-Action] Ready to Take Control
+			of Your Financial Future? [CTA Button: "Get Started" or "Contact
+			Us"] Discover how our expertise and products can help you achieve
+			financial security, protect your income, and build a lasting
+			legacy. Take the first step today by getting in touch with our
+			team. We're excited to embark on this financial journey with you!
+			[Section 4: Testimonials] Client Testimonial 1: "Thanks to [Your
+			Company Name], I've gained a deeper understanding of how to
+			protect my income and make the most of my financial
+			opportunities. Their guidance has been invaluable." - John Smith
+			Client Testimonial 2: "I highly recommend Bildove Financial
+			Services to anyone seeking financial security and expert advice.
+			Their personalized approach and comprehensive services have
+			exceeded my expectations." - Emily Johnson [Section 5: Contact
+			Information] Contact Us [Contact Form or Contact Information
+			Section] Have questions or want to schedule a consultation? Reach
+			out to us today. We're here to address your inquiries and provide
+			the guidance you need to achieve financial success. [Footer]
+			[Copyright Information and Links to Privacy Policy, Terms of
+			Service, etc.] Remember to replace Bildove Financial Services
+			with your actual company name and choose relevant images that
+			resonate with your target audience. The homepage content above is
+			designed to create a compelling introduction, highlight key
+			benefits, and encourage visitors to take action.
+		</main>
+	);
 }
