@@ -47,8 +47,8 @@ export default function Services() {
 				accumulation. Take the first step towards financial
 				empowerment by exploring our Rules of Money service and
 				gaining the knowledge and tools you need to make sound
-				financial choices. [CTA Button: "Learn More" or "Get
-				Started"]
+				financial choices. [CTA Button: &apos;Learn More&apos; or
+				&apos;Get Started&apos;]
 			</section>
 			<section className='min-h-screen flex flex-col justify-center items-center'>
 				[Page Heading: Protection of Income - Safeguarding Your
@@ -88,8 +88,8 @@ export default function Services() {
 				arise. Take a proactive approach to secure your financial
 				stability by exploring our Protection of Income service and
 				accessing the knowledge and tools necessary to protect your
-				income effectively. [CTA Button: "Learn More" or "Get
-				Started"]
+				income effectively. [CTA Button: &apos;Learn More&apos; or
+				&apos;Get Started&apos;]
 			</section>
 			<section className='min-h-screen flex flex-col justify-center items-center'>
 				[Page Heading: Protection of Assets - Safeguarding Your
@@ -130,7 +130,7 @@ export default function Services() {
 				to safeguard your assets by exploring our Protection of
 				Assets service and accessing the knowledge and tools
 				necessary to protect your wealth effectively. [CTA Button:
-				"Learn More" or "Get Started"]
+				&apos;Learn More&apos; or &apos;Get Started&apos;]
 			</section>
 			<section className='min-h-screen flex flex-col justify-center items-center'>
 				[Page Heading: Principal Protection - Preserving Your
@@ -164,11 +164,11 @@ export default function Services() {
 				investment types or a graph showing diversified portfolio
 				returns] By prioritizing principal protection in your
 				investment strategy, you can mitigate potential losses and
-				preserve the capital you've worked hard to accumulate.
+				preserve the capital you&apos;ve worked hard to accumulate.
 				Explore our Principal Protection service to gain the
 				knowledge and tools necessary to preserve your capital
 				effectively and make informed investment decisions. [CTA
-				Button: "Learn More" or "Get Started"]
+				Button: &apos;Learn More&apos; or &apos;Get Started&apos;]
 			</section>
 			<section className='min-h-screen flex flex-col justify-center items-center'>
 				[Page Heading: Tax Advantages - Optimizing Your Tax
@@ -202,17 +202,17 @@ export default function Services() {
 				philanthropic efforts while minimizing your tax burden.
 				Small Business Tax Planning: For small business owners, we
 				offer insights on tax planning strategies to optimize your
-				business's tax position. Topics include deductible expenses,
-				business structure considerations, and tax credits available
-				to small businesses. [Image: An image representing tax
-				planning, such as a person reviewing tax forms or a
+				business&apos;s tax position. Topics include deductible
+				expenses, business structure considerations, and tax credits
+				available to small businesses. [Image: An image representing
+				tax planning, such as a person reviewing tax forms or a
 				magnifying glass highlighting tax-related details] By
 				strategically leveraging tax advantages, you can minimize
 				your tax liability and retain more of your hard-earned
 				money. Explore our Tax Advantages service to gain the
 				knowledge and tools necessary to optimize your tax strategy
-				and capitalize on potential tax savings. [CTA Button: "Learn
-				More" or "Get Started"]
+				and capitalize on potential tax savings. [CTA Button:
+				&apos;Learn More&apos; or &apos;Get Started&apos;]
 			</section>
 			<section className='min-h-screen flex flex-col justify-center items-center'>
 				[Page Heading: Increase Cashflow - Maximizing Your Income
@@ -254,50 +254,51 @@ export default function Services() {
 				financial objectives. Explore our Increase Cashflow service
 				to gain the knowledge and tools necessary to maximize your
 				income potential and improve your financial outlook. [CTA
-				Button: "Learn More" or "Get Started"]
+				Button: &apos;Learn More&apos; or &apos;Get Started&apos;]
 			</section>
 			<section className='min-h-screen flex flex-col justify-center items-center'>
 				[Page Heading: Secured College Savings - Investing in Your
-				Child's Future] [Image: An image representing college
+				Child&apos;s Future] [Image: An image representing college
 				savings, such as a graduation cap or a piggy bank with a
 				graduation cap on top] Welcome to our Secured College
 				Savings service, where we focus on helping you plan and save
-				for your child's higher education expenses. We understand
-				that providing a quality education for your children is a
-				priority, and securing their college savings is an essential
-				part of that journey. In this service, we explore strategies
-				and options to save for college in a secure and efficient
-				manner. We delve into topics such as 529 college savings
-				plans, education savings accounts, financial aid
-				considerations, and maximizing savings through compound
-				interest. Our experts share practical tips and insights on
-				secured college savings, including: 529 College Savings
-				Plans: Discover the benefits of 529 plans, a tax-advantaged
-				way to save for education expenses. We discuss how these
-				plans work, the investment options available, and the
-				potential tax benefits associated with them. Education
-				Savings Accounts: Learn about education savings accounts
-				(ESAs) and how they can help you save for both primary and
-				secondary education expenses. We discuss contribution
-				limits, eligibility criteria, and the tax advantages of
-				ESAs. Financial Aid Considerations: Understand the impact of
-				college savings on financial aid eligibility. We provide
-				insights on how college savings can affect financial aid
-				calculations and strategies to maximize both savings and
-				potential financial aid opportunities. Compound Interest and
-				Saving Strategies: Explore the power of compound interest
-				and various saving strategies to maximize your college
-				savings. We discuss the benefits of starting early,
-				automatic contributions, and optimizing your investment
-				choices for long-term growth. [Image: An image representing
-				college education, such as a stack of books or a graduation
-				ceremony] By securing your child's college savings, you can
-				provide them with the opportunity to pursue higher education
-				without the burden of excessive student loan debt. Explore
-				our Secured College Savings service to gain the knowledge
-				and tools necessary to effectively plan for your child's
-				education and secure their future. [CTA Button: "Learn More"
-				or "Get Started"]
+				for your child&apos;s higher education expenses. We
+				understand that providing a quality education for your
+				children is a priority, and securing their college savings
+				is an essential part of that journey. In this service, we
+				explore strategies and options to save for college in a
+				secure and efficient manner. We delve into topics such as
+				529 college savings plans, education savings accounts,
+				financial aid considerations, and maximizing savings through
+				compound interest. Our experts share practical tips and
+				insights on secured college savings, including: 529 College
+				Savings Plans: Discover the benefits of 529 plans, a
+				tax-advantaged way to save for education expenses. We
+				discuss how these plans work, the investment options
+				available, and the potential tax benefits associated with
+				them. Education Savings Accounts: Learn about education
+				savings accounts (ESAs) and how they can help you save for
+				both primary and secondary education expenses. We discuss
+				contribution limits, eligibility criteria, and the tax
+				advantages of ESAs. Financial Aid Considerations: Understand
+				the impact of college savings on financial aid eligibility.
+				We provide insights on how college savings can affect
+				financial aid calculations and strategies to maximize both
+				savings and potential financial aid opportunities. Compound
+				Interest and Saving Strategies: Explore the power of
+				compound interest and various saving strategies to maximize
+				your college savings. We discuss the benefits of starting
+				early, automatic contributions, and optimizing your
+				investment choices for long-term growth. [Image: An image
+				representing college education, such as a stack of books or
+				a graduation ceremony] By securing your child&apos;s college
+				savings, you can provide them with the opportunity to pursue
+				higher education without the burden of excessive student
+				loan debt. Explore our Secured College Savings service to
+				gain the knowledge and tools necessary to effectively plan
+				for your child&apos;s education and secure their future.
+				[CTA Button: &apos;Learn More&apos; or &apos;Get
+				Started&apos;]
 			</section>
 			<section className='min-h-screen flex flex-col justify-center items-center'>
 				[Page Heading: Passive Income - Building Wealth through
@@ -381,7 +382,7 @@ export default function Services() {
 				generations to come. Explore our Legacy Planning service to
 				gain the knowledge and tools necessary to shape your legacy
 				and leave a meaningful imprint on the world. [CTA Button:
-				"Learn More" or "Get Started"]
+				&apos;Learn More&apos; or &apos;Get Started&apos;]
 			</section>
 			<section className='min-h-screen flex flex-col justify-center items-center'>
 				[Page Heading: Long-Term Care - Securing Your Future Health]
@@ -418,8 +419,8 @@ export default function Services() {
 				health needs are met while maintaining your quality of life
 				and financial security. Explore our Long-Term Care service
 				to gain the knowledge and tools necessary to secure your
-				future health and well-being. [CTA Button: "Learn More" or
-				"Get Started"]
+				future health and well-being. [CTA Button: &apos;Learn
+				More&apos; or &apos;Get Started&apos;]
 			</section>
 		</main>
 	);

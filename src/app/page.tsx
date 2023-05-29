@@ -43,10 +43,10 @@ export default function Home() {
 							comprehensive approach focuses on empowering
 							you with the insights and strategies needed
 							to make informed financial decisions. Whether
-							you're seeking to protect your income, grow
-							your wealth, or plan for a secure retirement,
-							we're here to guide you every step of the
-							way.
+							you&apos;re seeking to protect your income,
+							grow your wealth, or plan for a secure
+							retirement, we&apos;re here to guide you
+							every step of the way.
 						</div>
 					</div>
 				</div>
@@ -81,12 +81,12 @@ export default function Home() {
 					<p className='font-bold text-lg uppercase mb-3'>
 						Tailored Solutions
 					</p>
-					We recognize that every individual's financial
-					situation is unique. That's why we offer personalized
-					solutions that align with your specific needs, risk
-					tolerance, and aspirations. Our goal is to create a
-					customized roadmap that leads you towards financial
-					success and peace of mind.
+					We recognize that every individual&apos;s financial
+					situation is unique. That&apos;s why we offer
+					personalized solutions that align with your specific
+					needs, risk tolerance, and aspirations. Our goal is to
+					create a customized roadmap that leads you towards
+					financial success and peace of mind.
 				</div>
 			</section>
 			<section className='px-10 py-20'>
@@ -102,8 +102,8 @@ export default function Home() {
 						you achieve financial security, protect your
 						income, and build a lasting legacy. Take the first
 						step today by getting in touch with our team.
-						We're excited to embark on this financial journey
-						with you!
+						We&apos;re excited to embark on this financial
+						journey with you!
 					</div>
 				</div>
 			</section>

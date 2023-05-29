@@ -100,9 +100,9 @@ export default function ContactUs() {
 						Have questions or want to schedule a consultation?
 					</div>
 					<p>
-						Reach out to us today. We're here to address your
-						inquiries and provide the guidance you need to
-						achieve financial success.
+						Reach out to us today. We&apos;re here to address
+						your inquiries and provide the guidance you need
+						to achieve financial success.
 					</p>
 					<div className='flex mt-5 gap-x-3'>
 						<div className=''>

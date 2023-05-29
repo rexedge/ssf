@@ -18,10 +18,10 @@ export default function Testimonials() {
 				<p className='font-bold text-lg uppercase mb-10'>
 					John Smith
 				</p>
-				"Thanks to Smart Steps Financial Services, I've gained a
-				deeper understanding of how to protect my income and make
-				the most of my financial opportunities. Their guidance has
-				been invaluable."
+				&quot;Thanks to Smart Steps Financial Services, I&apos;ve
+				gained a deeper understanding of how to protect my income
+				and make the most of my financial opportunities. Their
+				guidance has been invaluable.&quot;
 			</div>
 			<div className='md:col-span-1 bg-white dark:bg-black p-5 rounded-lg mb-5 text-center'>
 				<Image
@@ -34,10 +34,10 @@ export default function Testimonials() {
 				<p className='font-bold text-lg uppercase mb-10'>
 					Emily Johnson
 				</p>
-				"I highly recommend Smart Steps Financial Services to anyone
-				seeking financial security and expert advice. Their
+				&quot;I highly recommend Smart Steps Financial Services to
+				anyone seeking financial security and expert advice. Their
 				personalized approach and comprehensive services have
-				exceeded my expectations."
+				exceeded my expectations.&quot;
 			</div>
 			<div className='md:col-span-1 bg-white dark:bg-black p-5 rounded-lg mb-5 text-center'>
 				<Image
@@ -50,10 +50,10 @@ export default function Testimonials() {
 				<p className='font-bold text-lg uppercase mb-10'>
 					Alexa Smith
 				</p>
-				"Thanks to Wise Wealth Management, I've learned how to
-				create a solid investment portfolio and plan for my future.
-				Their expertise has been essential in helping me achieve my
-				financial goals."
+				&quot;Thanks to Wise Wealth Management, I&apos;ve learned
+				how to create a solid investment portfolio and plan for my
+				future. Their expertise has been essential in helping me
+				achieve my financial goals.&quot;
 			</div>
 		</section>
 	);

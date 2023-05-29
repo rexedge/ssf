@@ -109,7 +109,7 @@ export default function Products() {
 				attractive interest rates to maximize your savings
 				potential. Key Features: Customized Savings Strategy: Work
 				with our financial experts to develop a personalized savings
-				strategy tailored to your specific goals, whether it's
+				strategy tailored to your specific goals, whether it&apos;s
 				saving for a down payment, a dream vacation, or an emergency
 				fund. Competitive Interest Rates: Benefit from competitive
 				interest rates that help your savings grow faster and earn
@@ -123,7 +123,8 @@ export default function Products() {
 				healthy saving habits for long-term financial success.
 				Flexibility and Liquidity: Maintain access to your savings
 				whenever you need them while earning competitive interest
-				rates. [CTA Button: "Contact Us" or "Get Started"]
+				rates. [CTA Button: &apos;Contact Us&apos; or &apos;Get
+				Started&apos;]
 			</section>
 			<section className='min-h-screen flex flex-col justify-center items-center'>
 				By offering a range of tailored products, we strive to

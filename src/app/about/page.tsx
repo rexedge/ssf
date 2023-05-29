@@ -33,12 +33,12 @@ export default function page() {
 			that our advice is informed, up-to-date, and aligned with the
 			best practices in the financial field. [Section 3: Our Values]
 			Integrity: We conduct our business with the utmost integrity,
-			placing our clients' best interests at the forefront of
+			placing our clients&apos; best interests at the forefront of
 			everything we do. Honesty, transparency, and ethical practices
 			are the cornerstones of our approach. Client-Centric Focus: We
 			are dedicated to building long-term relationships with our
 			clients, understanding their unique goals and aspirations. By
-			putting our clients' needs first, we strive to deliver
+			putting our clients&apos; needs first, we strive to deliver
 			personalized solutions that meet their financial objectives and
 			exceed their expectations. Education and Empowerment: We believe
 			in empowering our clients through education and knowledge. We are
@@ -58,15 +58,15 @@ export default function page() {
 			and up-to-date with the latest industry trends and strategies.
 			Continuously improving our knowledge and skills to better serve
 			you. [Section 6: Contact Information] Contact Us [Contact Form or
-			Contact Information Section] We're ready to assist you on your
-			financial journey. Reach out to us today to schedule a
+			Contact Information Section] We&apos;re ready to assist you on
+			your financial journey. Reach out to us today to schedule a
 			consultation or ask any questions you may have. We look forward
 			to hearing from you. [Footer] [Copyright Information and Links to
 			Privacy Policy, Terms of Service, etc.] Remember to replace [Your
 			Company Name] with your actual company name and choose relevant
 			images that convey professionalism, expertise, and
 			approachability. The About Us page content above is designed to
-			showcase your company's mission, expertise, values, and
+			showcase your company&apos;s mission, expertise, values, and
 			commitment to your clients.
 		</main>
 	);
