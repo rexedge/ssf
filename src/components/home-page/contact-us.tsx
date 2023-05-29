@@ -3,19 +3,13 @@ import FormatAddress from '@/utils/format-address';
 import React from 'react';
 
 export default function ContactUs() {
-	const handleSubmit = (event: <HTMLFormElement>) => {
-		event.preventDefault();
-	};
 	return (
 		<section className='px-10 py-20'>
 			<div className='text-center text-2xl lg:text-3xl font-bold mb-5 lg:mb-10'>
 				Contact Us
 			</div>
 			<div className='grid lg:grid-cols-2 gap-10'>
-				<form
-					className=''
-					onSubmit={handleSubmit}
-				>
+				<form className=''>
 					<div className=''>
 						<div className='mt-5 grid grid-cols-2 gap-5'>
 							<div className='col-span-2 md:col-span-1'>
