@@ -18,6 +18,7 @@ const Footer = () => (
 							width={50}
 							alt=''
 							src={'/ssf.png'}
+							className='dark:invert'
 						/>
 					</Link>
 					<div className='mb-3'>

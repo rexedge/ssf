@@ -12,7 +12,7 @@ export default function Testimonials() {
 					height={200}
 					width={200}
 					alt=''
-					src={'/kayode.jpg'}
+					src={'/john.jpg'}
 					className='mx-auto rounded-full h-20 w-20 object-cover object-center mb-5'
 				/>
 				<p className='font-bold text-lg uppercase mb-10'>
@@ -28,7 +28,7 @@ export default function Testimonials() {
 					height={200}
 					width={200}
 					alt=''
-					src={'/foluke.jpg'}
+					src={'/emily.jpg'}
 					className='mx-auto rounded-full h-20 w-20 object-cover object-center mb-5'
 				/>
 				<p className='font-bold text-lg uppercase mb-10'>
@@ -44,7 +44,7 @@ export default function Testimonials() {
 					height={200}
 					width={200}
 					alt=''
-					src={'/ayo.jpg'}
+					src={'/alexa.jpg'}
 					className='mx-auto rounded-full h-20 w-20 object-cover object-center mb-5'
 				/>
 				<p className='font-bold text-lg uppercase mb-10'>
