@@ -6,7 +6,7 @@ import Footer from '@/components/ui/footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-	title: 'Bildove Financial Services',
+	title: 'Smart Steps Financial Services',
 	description: 'Empowering Your Financial Future',
 };
 

@@ -3,15 +3,15 @@ import React from 'react';
 export default function page() {
 	return (
 		<main className='flex min-h-screen flex-col p-10'>
-			About Bildove Financial Services - Your Trusted Financial Partner
-			[Hero Image: A professional and friendly image showcasing a team
-			of financial experts or a diverse group of individuals] Welcome
-			to Bildove Financial Services, a leading provider of
+			About Smart Steps Financial Services - Your Trusted Financial
+			Partner [Hero Image: A professional and friendly image showcasing
+			a team of financial experts or a diverse group of individuals]
+			Welcome to Smart Steps Financial Services, a leading provider of
 			comprehensive financial solutions designed to empower individuals
 			and families on their journey to financial success. With years of
 			industry experience and a passion for helping others, our team is
 			committed to guiding you towards a secure and prosperous future.
-			[Section 1: Our Mission] At Bildove Financial Services, our
+			[Section 1: Our Mission] At Smart Steps Financial Services, our
 			mission is to provide our clients with the knowledge, tools, and
 			personalized guidance they need to achieve their financial goals.
 			We believe that financial well-being is attainable for everyone,
@@ -50,8 +50,8 @@ export default function page() {
 			expertise and backgrounds. With their combined knowledge and
 			dedication, they are here to guide you towards financial success
 			and provide the support you need at every step. [Section 5: Our
-			Commitment] At Bildove Financial Services, we are committed to:
-			Putting your best interests first and acting as your trusted
+			Commitment] At Smart Steps Financial Services, we are committed
+			to: Putting your best interests first and acting as your trusted
 			financial partner. Providing personalized solutions that align
 			with your unique goals and circumstances. Delivering exceptional
 			service and support to ensure your satisfaction. Staying informed
