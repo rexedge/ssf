@@ -50,10 +50,10 @@ export default function Testimonials() {
 				<p className='font-bold text-lg uppercase mb-10'>
 					Alexa Smith
 				</p>
-				&quot;Thanks to Wise Wealth Management, I&apos;ve learned
-				how to create a solid investment portfolio and plan for my
-				future. Their expertise has been essential in helping me
-				achieve my financial goals.&quot;
+				&quot;Thanks to Smart Steps Financial Services, I&apos;ve
+				learned how to create a solid investment portfolio and plan
+				for my future. Their expertise has been essential in helping
+				me achieve my financial goals.&quot;
 			</div>
 		</section>
 	);
