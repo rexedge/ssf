@@ -1,15 +1,36 @@
 'use client';
+import { MenuIcon } from '@heroicons/react/solid';
 import { AnimatePresence, motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useEffect, useRef, useState } from 'react';
 
 export default function NavBar() {
 	const [isMenuOpen, setMenuOpen] = useState(false);
+	const menuRef = useRef<HTMLButtonElement>(null);
 
 	const toggleMenu = () => {
 		setMenuOpen(!isMenuOpen);
 	};
+
+	const handleOutsideClick = (event: MouseEvent) => {
+		if (isMenuOpen === false) {
+			if (
+				menuRef.current &&
+				!menuRef.current.contains(event.target as Node)
+			) {
+				setMenuOpen(false);
+			}
+		}
+	};
+
+	useEffect(() => {
+		document.addEventListener('click', handleOutsideClick);
+
+		return () => {
+			document.removeEventListener('click', handleOutsideClick);
+		};
+	}, []);
 
 	return (
 		<Fragment>
@@ -53,46 +74,21 @@ export default function NavBar() {
 					</Link>
 				</div>
 				<button
-					className='shrink-0 py-2 px-4 dark:bg-teal-900 bg-teal-200 hover:bg-teal-400 dark:hover:bg-teal-700 rounded-lg cursor-pointer lg:hidden'
+					className='shrink-0 py-2 px-4 dark:bg-teal-900 bg-teal-200 hover:bg-teal-400 dark:hover:bg-teal-700 rounded-lg cursor-pointer lg:hidden relative'
 					onClick={toggleMenu}
+					ref={menuRef}
 				>
-					{isMenuOpen ? (
-						<svg
-							xmlns='http://www.w3.org/2000/svg'
-							fill='none'
-							viewBox='0 0 24 24'
-							strokeWidth={1.5}
-							stroke='currentColor'
-							className='w-6 h-6'
-						>
-							<path
-								strokeLinecap='round'
-								strokeLinejoin='round'
-								d='M3.75 9h16.5m-16.5 6.75h16.5'
-							/>
-						</svg>
-					) : (
-						<svg
-							xmlns='http://www.w3.org/2000/svg'
-							fill='none'
-							viewBox='0 0 24 24'
-							strokeWidth={1.5}
-							stroke='currentColor'
-							className='w-6 h-6'
-						>
-							<path
-								strokeLinecap='round'
-								strokeLinejoin='round'
-								d='M3.75 9h16.5m-16.5 6.75h16.5'
-							/>
-						</svg>
-					)}
+					{/* {isMenuOpen ? (
+						<XIcon className='h-6 w-6' />
+					) : ( */}
+					<MenuIcon className='h-6 w-6' />
+					{/* )} */}
 				</button>
 			</div>
 			<AnimatePresence>
 				{isMenuOpen && (
 					<motion.div
-						className={``}
+						className={`absolute top-[60px] left-0 bottom-0 right-0 z-[2000]`}
 						initial={{ opacity: 0, y: -1000 }}
 						animate={{ opacity: 1, y: 0 }}
 						exit={{ opacity: 0, y: -1000 }}

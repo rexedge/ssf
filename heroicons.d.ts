@@ -21,5 +21,7 @@ declare module '@heroicons/react/solid' {
 	export const LightBulbIcon: React.FC<
 		import('@heroicons/react').HeroIconProps
 	>;
+	export const XIcon: React.FC<import('@heroicons/react').HeroIconProps>;
+	export const MenuIcon: React.FC<import('@heroicons/react').HeroIconProps>;
 	// Add more icon declarations as needed
 }
