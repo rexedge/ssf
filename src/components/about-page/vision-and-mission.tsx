@@ -2,8 +2,8 @@ import React from 'react';
 
 const VisionAndMission: React.FC = () => {
 	return (
-		<section className='flex flex-col items-center justify-center min-h-screen bg-teal-100 dark:bg-teal-800'>
-			<h1 className='text-4xl font-bold mb-8'>
+		<section className='flex flex-col items-center justify-center min-h-screen bg-teal-100 dark:bg-teal-800 py-10'>
+			<h1 className='text-4xl font-bold mb-8 text-center'>
 				Our Vision and Mission
 			</h1>
 			<div className='container mx-auto p-4'>

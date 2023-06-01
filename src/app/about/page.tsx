@@ -14,18 +14,6 @@ const teamMembers = [
 		bio: 'Kayode Atiba is a seasoned financial advisor with over 10 years of experience...',
 		photo: '/kayode.jpg',
 	},
-	// {
-	// 	name: 'Jane Smith',
-	// 	position: 'Investment Specialist',
-	// 	bio: 'Jane Smith specializes in investment strategies and has a deep understanding...',
-	// 	photo: '/ayo.jpg',
-	// },
-	// {
-	// 	name: 'Mike Johnson',
-	// 	position: 'Retirement Planner',
-	// 	bio: 'Mike Johnson is a retirement planning expert, helping clients create solid...',
-	// 	photo: '/ayo.jpg',
-	// },
 ];
 
 export default function page() {
