@@ -1,6 +1,7 @@
 import { COMPANY_PROFILE } from '@/utils/const';
 import FormatAddress from '@/utils/format-address';
 import React from 'react';
+import Button from '../ui/button';
 
 export default function ContactUs() {
 	return (
@@ -87,12 +88,9 @@ export default function ContactUs() {
 					</div>
 
 					<div className='mt-6 flex items-center justify-start gap-x-6'>
-						<button
-							type='submit'
-							className='rounded-md bg-primary-dark px-10 py-2 uppercase font-semibold text-white shadow-sm hover:bg-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-100 dark:bg-teal-900'
-						>
+						<Button className='rounded-md bg-teal-100 dark:bg-teal-800 px-10 py-2 uppercase font-semibold shadow-sm hover:bg-teal-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-100'>
 							Send
-						</button>
+						</Button>
 					</div>
 				</form>
 				<div className='flex flex-col justify-center'>
