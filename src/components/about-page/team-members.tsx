@@ -31,9 +31,16 @@ const Team: React.FC<TeamProps> = ({ teamMembers }) => {
 	return (
 		<section className='min-h-full'>
 			<div className='container mx-auto px-4 py-10'>
-				<h2 className='text-2xl font-bold mb-4'>
+				<h2 className='text-4xl font-bold mb-4 text-center'>
 					Meet Our Experts
 				</h2>
+				<div className='mb-5'>
+					Our team of financial professionals brings a diverse
+					range of expertise and backgrounds. With their combined
+					knowledge and dedication, they are here to guide you
+					towards financial success and provide the support you
+					need at every step.
+				</div>
 				<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
 					{teamMembers.map((member, index) => (
 						<div

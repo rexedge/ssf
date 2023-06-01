@@ -1,3 +1,4 @@
+import Commitment from '@/components/about-page/commitments';
 import Expertise from '@/components/about-page/expertise';
 import Team from '@/components/about-page/team-members';
 import Values from '@/components/about-page/values';
@@ -44,25 +45,7 @@ export default function page() {
 			<Expertise />
 			<Values />
 			<Team teamMembers={teamMembers} />
-			<section className='min-h-screen'>
-				[Section 4: Our Team] Meet Our Experts [Team Photo: A
-				professional and approachable image of your team] Our team
-				of financial professionals brings a diverse range of
-				expertise and backgrounds. With their combined knowledge and
-				dedication, they are here to guide you towards financial
-				success and provide the support you need at every step.
-			</section>
-			<section className='min-h-screen'>
-				[Section 5: Our Commitment] At Smart Steps Financial
-				Services, we are committed to: Putting your best interests
-				first and acting as your trusted financial partner.
-				Providing personalized solutions that align with your unique
-				goals and circumstances. Delivering exceptional service and
-				support to ensure your satisfaction. Staying informed and
-				up-to-date with the latest industry trends and strategies.
-				Continuously improving our knowledge and skills to better
-				serve you.
-			</section>
+			<Commitment />
 			<ContactUs />
 		</main>
 	);
