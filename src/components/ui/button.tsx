@@ -9,7 +9,7 @@ interface ButtonProps {
 
 const Button = ({ children, href, onClick, className }: ButtonProps) => {
 	const buttonClasses =
-		'px-4 py-2 rounded-md text-sm transition duration-500 hover:opacity-80 uppercase';
+		'px-4 py-2 rounded-md text-sm transition duration-500 hover:shadow-lg uppercase';
 
 	if (href) {
 		return (
