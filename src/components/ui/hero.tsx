@@ -21,7 +21,7 @@ const Hero: React.FC<HeroSectionProps> = ({ title, description, image }) => {
 				/>
 				<div className='absolute inset-0 bg-black opacity-50' />
 			</div>
-			<div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center'>
+			<div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full px-4'>
 				<h1 className='text-4xl font-bold mb-2'>{title}</h1>
 				<p className='text-lg mb-8'>{description}</p>
 				<Button className='shrink-0 text-sm py-2 px-4 dark:bg-teal-900 bg-teal-200 text-black dark:text-white hover:bg-teal-400 dark:hover:bg-teal-700 rounded-lg cursor-pointer'>
