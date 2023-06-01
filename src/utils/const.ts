@@ -11,7 +11,7 @@ export const CAROUSEL_IMAGES = [
 		id: '1',
 		src: '/slide1.jpg',
 		alt: 'Image 1',
-		title: 'Smart Steps Financial',
+		title: COMPANY_PROFILE.name,
 		description: 'Empowering Your Financial Future',
 		buttonText: 'Book consultation',
 	},
@@ -19,7 +19,7 @@ export const CAROUSEL_IMAGES = [
 		id: '2',
 		src: '/slide2.jpg',
 		alt: 'Image 2',
-		title: 'Smart Steps Financial',
+		title: COMPANY_PROFILE.name,
 		description: 'Empowering Your Financial Future',
 		buttonText: 'Book consultation',
 	},
@@ -115,4 +115,4 @@ export const PRODUCTS = [
 ];
 
 export const MAP_LOCATION =
-	'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.72002424191!2d3.46580567526051!3d6.430002124242282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b917993a95193%3A0x21bdfe095d86ad6d!2sISCE%20DIGITAL%20CONCEPT!5e0!3m2!1sen!2sng!4v1685620810779!5m2!1sen!2sng';
+	'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3465.9938342847277!2d-95.61365442432094!3d29.690958435232204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640dd98fc971695%3A0x237fb12e3ffcfd4f!2s8015%20Barnes%20Ridge%20Ln%2C%20Houston%2C%20TX%2077072%2C%20USA!5e0!3m2!1sen!2sng!4v1685624248600!5m2!1sen!2sng';

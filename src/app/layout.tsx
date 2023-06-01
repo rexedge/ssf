@@ -2,12 +2,13 @@ import NavBar from '@/components/ui/nav-bar';
 import './globals.css';
 import { Inter } from 'next/font/google';
 import Footer from '@/components/ui/footer';
+import { COMPANY_PROFILE } from '@/utils/const';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-	title: 'Smart Steps Financial Services',
-	description: 'Empowering Your Financial Future',
+	title: COMPANY_PROFILE.name,
+	description: COMPANY_PROFILE.tagline,
 };
 
 export default function RootLayout({

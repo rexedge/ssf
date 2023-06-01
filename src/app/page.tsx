@@ -2,7 +2,7 @@ import ContactUs from '@/components/home-page/contact-us';
 import Testimonials from '@/components/home-page/testimonials';
 import Button from '@/components/ui/button';
 import Carousel from '@/components/ui/carousel';
-import { CAROUSEL_IMAGES } from '@/utils/const';
+import { CAROUSEL_IMAGES, COMPANY_PROFILE } from '@/utils/const';
 import Image from 'next/image';
 
 export default function Home() {
@@ -14,11 +14,12 @@ export default function Home() {
 			/>
 			<section className='px-10 py-20 bg-teal-100 dark:bg-teal-900'>
 				<div className='text-lg font-bold italic text-center'>
-					Welcome to Smart Steps Financial Services, your trusted
-					partner in achieving financial security and building a
-					prosperous future. We are dedicated to providing you
-					with the knowledge, tools, and products necessary to
-					navigate the complexities of the financial world.
+					Welcome to {COMPANY_PROFILE.name} Services, your
+					trusted partner in achieving financial security and
+					building a prosperous future. We are dedicated to
+					providing you with the knowledge, tools, and products
+					necessary to navigate the complexities of the financial
+					world.
 				</div>
 			</section>
 			<section className='px-10 py-20 lg:flex gap-10'>
@@ -37,7 +38,7 @@ export default function Home() {
 							INTRODUCTION
 						</h2>
 						<div>
-							At Smart Steps Financial Services, we
+							At {COMPANY_PROFILE.name} Services, we
 							understand that financial well-being is a top
 							priority for individuals and families. Our
 							comprehensive approach focuses on empowering

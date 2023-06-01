@@ -1,3 +1,4 @@
+import { COMPANY_PROFILE } from '@/utils/const';
 import React from 'react';
 
 const VisionAndMission: React.FC = () => {
@@ -13,10 +14,10 @@ const VisionAndMission: React.FC = () => {
 							Our Vision
 						</h2>
 						<p className='mb-2'>
-							At Smart Steps Financial Services, our vision
-							is to create a future where financial freedom
-							is within reach for all individuals. We
-							envision a world where everyone has the
+							At {COMPANY_PROFILE.name} Services, our
+							vision is to create a future where financial
+							freedom is within reach for all individuals.
+							We envision a world where everyone has the
 							confidence and ability to make informed
 							financial decisions, leading to a life of
 							security, prosperity, and opportunities.
@@ -38,7 +39,7 @@ const VisionAndMission: React.FC = () => {
 							Our Mission
 						</h2>
 						<p className='mb-2'>
-							At Smart Steps Financial Services, our
+							At {COMPANY_PROFILE.name} Services, our
 							mission is to provide our clients with the
 							knowledge, tools, and personalized guidance
 							they need to achieve their financial goals.
