@@ -18,7 +18,7 @@ const Values: React.FC = () => {
 						</h3>
 						<p className=''>
 							We conduct our business with the utmost
-							integrity, placing our clients' best
+							integrity, placing our clients&apos; best
 							interests at the forefront of everything we
 							do. Honesty, transparency, and ethical
 							practices are the cornerstones of our
@@ -34,10 +34,10 @@ const Values: React.FC = () => {
 							We are dedicated to building long-term
 							relationships with our clients, understanding
 							their unique goals and aspirations. By
-							putting our clients' needs first, we strive
-							to deliver personalized solutions that meet
-							their financial objectives and exceed their
-							expectations.
+							putting our clients&apos; needs first, we
+							strive to deliver personalized solutions that
+							meet their financial objectives and exceed
+							their expectations.
 						</p>
 					</div>
 					<div className='flex flex-col items-center'>

@@ -41,9 +41,11 @@ const Team: React.FC<TeamProps> = ({ teamMembers }) => {
 							onClick={() => openModal(member)}
 							className='bg-teal-100 dark:bg-teal-800 rounded-lg p-6 shadow-md'
 						>
-							<img
+							<Image
 								src={member.photo}
 								alt={member.name}
+								height={200}
+								width={200}
 								className='w-full h-auto mb-4 rounded-lg'
 							/>
 							<h3 className='text-xl font-bold mb-2'>
