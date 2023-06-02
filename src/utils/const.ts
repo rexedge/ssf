@@ -26,6 +26,30 @@ export const CAROUSEL_IMAGES = [
 	},
 ];
 
+export const TEAM_MEMBERS = [
+	{
+		name: 'Kayode Atiba',
+		position: 'Financial Advisor',
+		bio: 'Kayode Atiba is a seasoned financial advisor with over 10 years of experience...',
+		photo: '/kayode.jpg',
+		age: 21,
+	},
+	{
+		name: 'Ayomide',
+		position: 'Financial Whatever',
+		bio: 'Ayomide Ogunlana is a seasoned financial advisor with over 10 years of experience...',
+		photo: '/ayo.jpg',
+		age: 21,
+	},
+	{
+		name: 'Ayomide',
+		position: 'Financial Whatever',
+		bio: 'Ayomide Ogunlana is a seasoned financial advisor with over 10 years of experience...',
+		photo: '/ayo.jpg',
+		age: 21,
+	},
+];
+
 export const COMMITMENT_STATEMENTS = [
 	'Putting your best interests first and acting as your trusted financial partner.',
 	'Providing personalized solutions that align with your unique goals and circumstances.',

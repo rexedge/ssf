@@ -5,17 +5,8 @@ import Values from '@/components/about-page/values';
 import VisionAndMission from '@/components/about-page/vision-and-mission';
 import ContactUs from '@/components/home-page/contact-us';
 import Hero from '@/components/ui/hero';
-import { COMPANY_PROFILE } from '@/utils/const';
+import { COMPANY_PROFILE, TEAM_MEMBERS } from '@/utils/const';
 import React from 'react';
-
-const teamMembers = [
-	{
-		name: 'Kayode Atiba',
-		position: 'Financial Advisor',
-		bio: 'Kayode Atiba is a seasoned financial advisor with over 10 years of experience...',
-		photo: '/kayode.jpg',
-	},
-];
 
 export default function page() {
 	return (
@@ -33,7 +24,7 @@ export default function page() {
 			<VisionAndMission />
 			<Expertise />
 			<Values />
-			<Team teamMembers={teamMembers} />
+			<Team teamMembers={TEAM_MEMBERS} />
 			<Commitment />
 			<ContactUs />
 		</main>
