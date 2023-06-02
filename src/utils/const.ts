@@ -4,6 +4,7 @@ export const COMPANY_PROFILE = {
 	address: '8015 Barnes Ridge Ln, Houston TX, 77072',
 	phone: '+1-346-270-5671',
 	email: 'info@smartstepsfinance.com',
+	calendly: 'https://calendly.com/akinolaolaide621/30min',
 };
 
 export const CAROUSEL_IMAGES = [
@@ -12,7 +13,7 @@ export const CAROUSEL_IMAGES = [
 		src: '/slide1.jpg',
 		alt: 'Image 1',
 		title: COMPANY_PROFILE.name,
-		description: 'Empowering Your Financial Future',
+		description: COMPANY_PROFILE.tagline,
 		buttonText: 'Book consultation',
 	},
 	{
@@ -20,7 +21,7 @@ export const CAROUSEL_IMAGES = [
 		src: '/slide2.jpg',
 		alt: 'Image 2',
 		title: COMPANY_PROFILE.name,
-		description: 'Empowering Your Financial Future',
+		description: COMPANY_PROFILE.tagline,
 		buttonText: 'Book consultation',
 	},
 ];
@@ -67,7 +68,7 @@ export const SERVICES = [
 	{
 		title: 'Secured College Savings',
 		description:
-			"Planning for your child's education is a significant financial responsibility. We offer guidance on secured college savings plans, including 529 plans and education savings accounts. By investing in these options, you can accumulate funds for your child's education while potentially benefiting from tax advantages and ensuring their future educational opportunities.",
+			"Planning for your child's education is a significant financial responsibility. We offer guidance on secured college savings plans, including 7702 plans and education savings accounts. By investing in these options, you can accumulate funds for your child's education while potentially benefiting from tax advantages and ensuring their future educational opportunities.",
 	},
 	{
 		title: 'Passive Income',

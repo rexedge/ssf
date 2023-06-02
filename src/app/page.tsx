@@ -95,10 +95,13 @@ export default function Home() {
 					Ready to Take Control of Your Financial Future?
 				</div>
 				<div className='text-center flex flex-col items-center'>
-					<Button className='mb-10 outline bg-teal-100 dark:bg-teal-900'>
+					<Button
+						href={COMPANY_PROFILE.calendly}
+						className='mb-10 outline bg-teal-100 dark:bg-teal-900'
+					>
 						GET STARTED
 					</Button>
-					<div className='text-sm max-w-[500px]'>
+					<div className='text-sm max-w-[500px] mt-10'>
 						Discover how our expertise and products can help
 						you achieve financial security, protect your
 						income, and build a lasting legacy. Take the first

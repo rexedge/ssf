@@ -4,6 +4,8 @@ import { AnimatePresence, motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { Fragment, useEffect, useRef, useState } from 'react';
+import Button from './button';
+import { COMPANY_PROFILE } from '@/utils/const';
 
 export default function NavBar() {
 	const [isMenuOpen, setMenuOpen] = useState(false);
@@ -88,7 +90,7 @@ export default function NavBar() {
 			<AnimatePresence>
 				{isMenuOpen && (
 					<motion.div
-						className={`absolute top-[60px] left-0 bottom-0 right-0 z-[2000]`}
+						className={`relative top-0 left-0 bottom-0 right-0 z-[2000] overflow-hidden`}
 						initial={{ opacity: 0, y: -1000 }}
 						animate={{ opacity: 1, y: 0 }}
 						exit={{ opacity: 0, y: -1000 }}
@@ -119,9 +121,12 @@ export default function NavBar() {
 							>
 								CONTACT
 							</Link>
-							<button className='shrink-0 py-2 px-4 dark:bg-teal-900 bg-teal-200 hover:bg-teal-400 dark:hover:bg-teal-700 rounded-lg cursor-pointer'>
+							<Button
+								href={COMPANY_PROFILE.calendly}
+								className='shrink-0 py-2 px-4 dark:bg-teal-900 bg-teal-200 hover:bg-teal-400 dark:hover:bg-teal-700 rounded-lg cursor-pointer'
+							>
 								BOOK CONSULTATION
-							</button>
+							</Button>
 						</div>
 					</motion.div>
 				)}

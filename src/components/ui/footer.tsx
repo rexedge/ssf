@@ -11,7 +11,7 @@ const Footer = () => (
 				<div className='w-full md:w-1/2 lg:w-2/5 mb-8 lg:mb-0'>
 					<Link
 						href={'/'}
-						className='text-lg font-semibold mb-4 invert'
+						className='text-lg font-semibold'
 					>
 						<Image
 							height={50}
@@ -21,7 +21,7 @@ const Footer = () => (
 							className='dark:invert'
 						/>
 					</Link>
-					<div className='mb-3'>
+					<div className='my-3'>
 						<FormatAddress
 							address={COMPANY_PROFILE.address}
 						/>
