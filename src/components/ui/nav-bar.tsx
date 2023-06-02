@@ -32,7 +32,7 @@ export default function NavBar() {
 		return () => {
 			document.removeEventListener('click', handleOutsideClick);
 		};
-	}, []);
+	}, [handleOutsideClick]);
 
 	return (
 		<Fragment>
@@ -51,25 +51,25 @@ export default function NavBar() {
 				</Link>
 				<div className='lg:flex justify-center w-full hidden'>
 					<Link
-						className='py-2 px-4 hover:text-teal-800 hover:scale-110 transition-all duration-500'
+						className='py-2 px-4 hover:text-teal-800 dark:hover:text-teal-200 hover:scale-110 transition-all duration-500'
 						href={'/about'}
 					>
 						ABOUT
 					</Link>
 					<Link
-						className='py-2 px-4 hover:text-teal-800 hover:scale-110 transition-all duration-500'
+						className='py-2 px-4 hover:text-teal-800 dark:hover:text-teal-200 hover:scale-110 transition-all duration-500'
 						href={'/products'}
 					>
 						PRODUCTS
 					</Link>
 					<Link
-						className='py-2 px-4 hover:text-teal-800 hover:scale-110 transition-all duration-500'
+						className='py-2 px-4 hover:text-teal-800 dark:hover:text-teal-200 hover:scale-110 transition-all duration-500'
 						href={'/services'}
 					>
 						SERVICES
 					</Link>
 					<Link
-						className='py-2 px-4 hover:text-teal-800 hover:scale-110 transition-all duration-500'
+						className='py-2 px-4 hover:text-teal-800 dark:hover:text-teal-200 hover:scale-110 transition-all duration-500'
 						href={'/contact'}
 					>
 						CONTACT
@@ -98,25 +98,25 @@ export default function NavBar() {
 					>
 						<div className='bg-white dark:bg-teal-800 py-2 px-4 flex flex-col gap-10 items-center w-screen h-screen'>
 							<Link
-								className='py-2 px-4 hover:scale-110 transition-all'
+								className='py-2 px-4 hover:text-teal-800 dark:hover:text-teal-200 hover:scale-110 transition-all'
 								href={'/about'}
 							>
 								ABOUT
 							</Link>
 							<Link
-								className='py-2 px-4 hover:scale-110 transition-all'
+								className='py-2 px-4 hover:text-teal-800 dark:hover:text-teal-200 hover:scale-110 transition-all'
 								href={'/products'}
 							>
 								PRODUCTS
 							</Link>
 							<Link
-								className='py-2 px-4 hover:scale-110 transition-all'
+								className='py-2 px-4 hover:text-teal-800 dark:hover:text-teal-200 hover:scale-110 transition-all'
 								href={'/services'}
 							>
 								SERVICES
 							</Link>
 							<Link
-								className='py-2 px-4 hover:scale-110 transition-all'
+								className='py-2 px-4 hover:text-teal-800 dark:hover:text-teal-200 hover:scale-110 transition-all'
 								href={'/contact'}
 							>
 								CONTACT
