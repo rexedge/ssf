@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import Button from './button';
+import { COMPANY_PROFILE } from '@/utils/const';
 
 interface ImageObject {
 	id: string;
@@ -152,7 +153,10 @@ const Carousel = ({ images, nav = false, pagination = true }: Props) => {
 								</p>
 							)}
 							{images[currentIndex].buttonText && (
-								<Button className='shrink-0 text-sm py-2 px-4 dark:bg-teal-900 bg-teal-200 text-black dark:text-white hover:bg-teal-400 dark:hover:bg-teal-700 rounded-lg cursor-pointer'>
+								<Button
+									href={COMPANY_PROFILE.calendly}
+									className='shrink-0 text-sm py-2 px-4 dark:bg-teal-900 bg-teal-200 text-black dark:text-white hover:bg-teal-400 dark:hover:bg-teal-700 rounded-lg cursor-pointer'
+								>
 									{images[currentIndex].buttonText}
 								</Button>
 							)}
