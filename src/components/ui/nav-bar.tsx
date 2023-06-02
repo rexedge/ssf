@@ -51,25 +51,25 @@ export default function NavBar() {
 				</Link>
 				<div className='lg:flex justify-center w-full hidden'>
 					<Link
-						className='py-2 px-4 hover:scale-110 transition-all'
+						className='py-2 px-4 hover:text-teal-800 hover:scale-110 transition-all duration-500'
 						href={'/about'}
 					>
 						ABOUT
 					</Link>
 					<Link
-						className='py-2 px-4 hover:scale-110 transition-all'
+						className='py-2 px-4 hover:text-teal-800 hover:scale-110 transition-all duration-500'
 						href={'/products'}
 					>
 						PRODUCTS
 					</Link>
 					<Link
-						className='py-2 px-4 hover:scale-110 transition-all'
+						className='py-2 px-4 hover:text-teal-800 hover:scale-110 transition-all duration-500'
 						href={'/services'}
 					>
 						SERVICES
 					</Link>
 					<Link
-						className='py-2 px-4 hover:scale-110 transition-all'
+						className='py-2 px-4 hover:text-teal-800 hover:scale-110 transition-all duration-500'
 						href={'/contact'}
 					>
 						CONTACT
