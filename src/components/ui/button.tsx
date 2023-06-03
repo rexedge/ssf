@@ -5,9 +5,18 @@ interface ButtonProps {
 	href?: string;
 	onClick?: () => void;
 	className?: string;
+	type?: 'button' | 'submit' | 'reset' | undefined;
+	disabled?: boolean;
 }
 
-const Button = ({ children, href, onClick, className }: ButtonProps) => {
+const Button = ({
+	children,
+	href,
+	onClick,
+	className,
+	type,
+	disabled,
+}: ButtonProps) => {
 	const buttonClasses =
 		'px-4 py-2 rounded-md text-sm transition duration-500 hover:shadow-lg uppercase';
 
@@ -23,8 +32,10 @@ const Button = ({ children, href, onClick, className }: ButtonProps) => {
 
 	return (
 		<button
+			type={type}
 			className={`${buttonClasses} ${className}`}
 			onClick={onClick}
+			disabled={disabled}
 		>
 			{children}
 		</button>
