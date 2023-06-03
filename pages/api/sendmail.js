@@ -2,7 +2,6 @@ import nodemailer from "nodemailer"
 
 export default async function ContactAPI(req, res) {
 	const user = process.env.GMAIL_USER
-	// const user = 'info@smartstepssolution.com'
 	const { name, email, message, subject } = req.body
 
 	const data = {
@@ -14,7 +13,6 @@ export default async function ContactAPI(req, res) {
 		secure: true,
 		auth: {
 			user: user,
-			// pass: 'SSFS2023',
 			pass: process.env.GMAIL_PASSWORD,
 		}
 	});
