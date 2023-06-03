@@ -4,7 +4,7 @@ export const COMPANY_PROFILE = {
 	address: '8015 Barnes Ridge Ln, Houston TX, 77072',
 	phone: '+1-346-270-5671',
 	email: 'info@smartstepsfinance.com',
-	calendly: 'https://calendly.com/smartstepsfinancialsolutions/fa',
+	calendly: 'https://calendly.com/ssfinance',
 };
 
 export const CAROUSEL_IMAGES = [
