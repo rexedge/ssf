@@ -141,3 +141,24 @@ export const PRODUCTS = [
 
 export const MAP_LOCATION =
 	'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3465.9938342847277!2d-95.61365442432094!3d29.690958435232204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640dd98fc971695%3A0x237fb12e3ffcfd4f!2s8015%20Barnes%20Ridge%20Ln%2C%20Houston%2C%20TX%2077072%2C%20USA!5e0!3m2!1sen!2sng!4v1685624248600!5m2!1sen!2sng';
+
+export const TESTIMONIALS = [
+	{
+		id: '00',
+		image: '/john.jpg',
+		name: 'John Smith',
+		testimony: `"I can't thank ${COMPANY_PROFILE.name} Services enough for the incredible support and guidance they provided me with. As a first-time investor, I was overwhelmed by the complexities of the financial market. However, their team patiently explained everything to me, helping me make informed decisions about my investments. Thanks to their expertise and personalized advice, I've seen my portfolio grow steadily, and I now feel confident about my financial future. I highly recommend Smart Steps to anyone seeking reliable financial services."`,
+	},
+	{
+		id: '01',
+		image: '/emily.jpg',
+		name: 'Emily Johnson',
+		testimony: `"${COMPANY_PROFILE.name} Services has been a game-changer for me and my family. We were struggling to manage our debts and plan for our children's education. But when we reached out to Smart Steps, their compassionate and knowledgeable team went above and beyond to help us. They crafted a comprehensive debt management plan that helped us regain control over our finances. They also provided excellent insights and strategies to save for our children's future education. Thanks to Smart Steps, we are now on track towards financial stability and have peace of mind knowing we're making smart financial choices."`,
+	},
+	{
+		id: '02',
+		image: '/alexa.jpg',
+		name: 'Alexa Smith',
+		testimony: `"Working with ${COMPANY_PROFILE.name} Services has been a transformative experience. Their financial advisors truly care about their clients' well-being and take the time to understand their unique goals and challenges. They helped me create a tailored financial plan that aligned with my aspirations. With their guidance, I was able to optimize my investments, protect my assets, and ensure a comfortable retirement. Smart Steps' commitment to their clients' success sets them apart, and I wholeheartedly recommend their services to anyone seeking a trustworthy partner in their financial journey."`,
+	},
+];
