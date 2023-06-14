@@ -29,25 +29,25 @@ export const CAROUSEL_IMAGES = [
 export const TEAM_MEMBERS = [
 	{
 		name: 'Kayode Atiba',
-		position: 'Financial Advisor',
-		bio: 'Kayode Atiba is a seasoned financial advisor with over 10 years of experience...',
+		position: 'Licensed Financial Professional',
+		bio: 'Kayode Atiba is a seasoned Licensed Financial Professional with many years of experience...',
 		photo: '/kayode.jpg',
 		age: 21,
 	},
 	{
-		name: 'Ayomide',
-		position: 'Financial Whatever',
-		bio: 'Ayomide Ogunlana is a seasoned financial advisor with over 10 years of experience...',
-		photo: '/ayo.jpg',
+		name: 'Foluke Oladipo',
+		position: 'Licensed Financial Professional',
+		bio: 'Foluke Oladipo is a seasoned Licensed Financial Professional with over 10 years of experience...',
+		photo: '/foluke.jpg',
 		age: 21,
 	},
-	{
-		name: 'Ayomide',
-		position: 'Financial Whatever',
-		bio: 'Ayomide Ogunlana is a seasoned financial advisor with over 10 years of experience...',
-		photo: '/ayo.jpg',
-		age: 21,
-	},
+	// {
+	// 	name: 'Ayomide',
+	// 	position: 'Financial Whatever',
+	// 	bio: 'Ayomide Ogunlana is a seasoned financial advisor with over 10 years of experience...',
+	// 	photo: '/ayo.jpg',
+	// 	age: 21,
+	// },
 ];
 
 export const COMMITMENT_STATEMENTS = [
