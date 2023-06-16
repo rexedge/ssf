@@ -2,7 +2,7 @@ import ContactUs from '@/components/home-page/contact-us';
 import Testimonials from '@/components/home-page/testimonials';
 import Button from '@/components/ui/button';
 import Carousel from '@/components/ui/carousel';
-import { CAROUSEL_IMAGES, COMPANY_PROFILE } from '@/utils/const';
+import { CAROUSEL_IMAGES, COMPANY_PROFILE, PARTNERS } from '@/utils/const';
 import Image from 'next/image';
 
 export default function Home() {
@@ -112,6 +112,34 @@ export default function Home() {
 				</div>
 			</section>
 			<Testimonials />
+			<section className='bg-teal-500'>
+				<div className='container mx-auto p-10'>
+					<div className='mb-16 text-center text-white text-[48px]'>
+						FINANCIAL SERVICES WE PROVIDE
+					</div>
+					<div className='grid gap-10 items-center justify-center grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
+						{PARTNERS.map((partner, id) => (
+							<div className='flex flex-col gap-3 items-center justify-center text-white'>
+								<div
+									key={id}
+									className='mb-6 lg:mb-0 mx-auto flex justify-center items-center h-48 w-48 bg-white rounded-full p-3 border-2 border-teal-800'
+								>
+									<Image
+										src={partner.image}
+										height={192}
+										width={192}
+										alt={partner.name}
+										className='h-full w-full object-center object-contain'
+									/>
+								</div>
+								<div className='font-bold uppercase text-xl'>
+									{partner.name}
+								</div>
+							</div>
+						))}
+					</div>
+				</div>
+			</section>
 			<ContactUs />
 		</main>
 	);

@@ -162,3 +162,66 @@ export const TESTIMONIALS = [
 		testimony: `"Working with ${COMPANY_PROFILE.name} Services has been a transformative experience. Their financial advisors truly care about their clients' well-being and take the time to understand their unique goals and challenges. They helped me create a tailored financial plan that aligned with my aspirations. With their guidance, I was able to optimize my investments, protect my assets, and ensure a comfortable retirement. Smart Steps' commitment to their clients' success sets them apart, and I wholeheartedly recommend their services to anyone seeking a trustworthy partner in their financial journey."`,
 	},
 ];
+
+export const PARTNERS = [
+	{
+		id: '0',
+		name: 'Legacy Shield',
+		image: '/legacyshield.png',
+	},
+	{
+		id: '1',
+		name: 'Legacy Shield',
+		image: '/legacyshield.png',
+	},
+	{
+		id: '2',
+		name: 'Legacy Shield',
+		image: '/legacyshield.png',
+	},
+	{
+		id: '3',
+		name: 'Legacy Shield',
+		image: '/legacyshield.png',
+	},
+	{
+		id: '4',
+		name: 'Legacy Shield',
+		image: '/legacyshield.png',
+	},
+	{
+		id: '5',
+		name: 'Legacy Shield',
+		image: '/legacyshield.png',
+	},
+	{
+		id: '6',
+		name: 'Legacy Shield',
+		image: '/legacyshield.png',
+	},
+	{
+		id: '7',
+		name: 'Legacy Shield',
+		image: '/legacyshield.png',
+	},
+	{
+		id: '8',
+		name: 'Legacy Shield',
+		image: '/legacyshield.png',
+	},
+	{
+		id: '9',
+		name: 'Legacy Shield',
+		image: '/legacyshield.png',
+	},
+	{
+		id: '10',
+		name: 'Legacy Shield',
+		image: '/legacyshield.png',
+	},
+	{
+		id: '11',
+		name: 'Legacy Shield',
+		image: '/legacyshield.png',
+	},
+];
