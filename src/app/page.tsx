@@ -4,6 +4,7 @@ import Button from '@/components/ui/button';
 import Carousel from '@/components/ui/carousel';
 import { CAROUSEL_IMAGES, COMPANY_PROFILE, PARTNERS } from '@/utils/const';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
 	return (
@@ -119,11 +120,12 @@ export default function Home() {
 					</div>
 					<div className='grid gap-10 items-center justify-center grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
 						{PARTNERS.map((partner, id) => (
-							<div className='flex flex-col gap-3 items-center justify-center text-white'>
-								<div
-									key={id}
-									className='mb-6 lg:mb-0 mx-auto flex justify-center items-center h-48 w-48 bg-white rounded-full p-3 border-2 border-teal-800'
-								>
+							<Link
+								href={partner.href}
+								key={id}
+								className='flex flex-col gap-3 items-center justify-center text-white max-w-[200px] mx-auto'
+							>
+								<div className='mb-6 lg:mb-0 mx-auto flex justify-center items-center h-48 w-48 bg-white rounded-full p-3 border-4 border-teal-800 overflow-hidden'>
 									<Image
 										src={partner.image}
 										height={192}
@@ -132,10 +134,10 @@ export default function Home() {
 										className='h-full w-full object-center object-contain'
 									/>
 								</div>
-								<div className='font-bold uppercase text-xl'>
+								<div className='font-bold uppercase text-lg text-center'>
 									{partner.name}
 								</div>
-							</div>
+							</Link>
 						))}
 					</div>
 				</div>

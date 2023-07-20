@@ -11,17 +11,19 @@ export default async function ContactAPI(req, res) {
 		subject,
 	};
 	console.log(data);
-	const transporter = nodemailer.createTransport({
-		host: 'smtp.zoho.com',
-		port: 465,
-		secure: true,
-		auth: {
-			user: user,
-			pass: process.env.GMAIL_PASSWORD,
-		},
-	});
 
 	try {
+
+		const transporter = nodemailer.createTransport({
+			host: 'smtp.zoho.com',
+			port: 465,
+			secure: true,
+			auth: {
+				user: user,
+				pass: process.env.GMAIL_PASSWORD,
+			},
+		});
+
 		// Sending the first email to info@smartstepssolution.com
 		const mail = await transporter.sendMail({
 			from: 'info@smartstepssolution.com',
