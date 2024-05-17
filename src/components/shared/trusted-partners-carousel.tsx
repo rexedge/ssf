@@ -57,12 +57,6 @@ export default function TrustedPartnersCarousel() {
 									)
 								)}
 							</CarouselContent>
-							<CarouselPrevious className='mr-4 sm:mr-6 md:mr-8 lg:mr-10'>
-								<ChevronLeftIcon className='h-6 w-6' />
-							</CarouselPrevious>
-							<CarouselNext className='ml-4 sm:ml-6 md:ml-8 lg:ml-10'>
-								<ChevronRightIcon className='h-6 w-6' />
-							</CarouselNext>
 						</Carousel>
 					</div>
 				</div>

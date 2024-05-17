@@ -125,7 +125,7 @@ export default function Home() {
 			</section>
 			<Testimonials />
 			<section className='bg-primary'>
-				<div className='container mx-auto p-10'>
+				<div className='container mx-auto p-5 md:p-10'>
 					<div className='mb-10 text-center text-tertiary text-3xl md:text-4xl font-bold'>
 						FINANCIAL SERVICES <br /> WE PROVIDE
 					</div>
@@ -134,9 +134,9 @@ export default function Home() {
 							<Link
 								href={partner.href}
 								key={id}
-								className='flex flex-col gap-3 items-center justify-center text-white max-w-[200px] mx-auto'
+								className='flex flex-col gap-3 items-center justify-center text-white w-full mx-auto'
 							>
-								<div className='mb-6 lg:mb-0 mx-auto flex justify-center items-center h-48 w-48 bg-white rounded-full border-4 border-tertiary overflow-hidden'>
+								<div className='mb-6 lg:mb-0 mx-auto flex justify-center items-center aspect-square w-full bg-white rounded-full border-4 border-tertiary overflow-hidden'>
 									<Image
 										src={partner.image}
 										height={192}
