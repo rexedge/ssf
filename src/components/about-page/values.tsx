@@ -7,12 +7,12 @@ import {
 
 const Values: React.FC = () => {
 	return (
-		<section className='min-h-full bg-teal-100 dark:bg-teal-800'>
+		<section className='min-h-full bg-primary dark:bg-primary-foreground'>
 			<div className='container mx-auto px-4 py-10 text-center'>
 				<h2 className='text-4xl font-bold mb-16'>Our Values</h2>
 				<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
 					<div className='flex flex-col items-center'>
-						<UserGroupIcon className='h-20 w-20 mb-2 text-teal-600' />
+						<UserGroupIcon className='h-20 w-20 mb-2 bg-primary/60' />
 						<h3 className='text-xl font-bold mb-2'>
 							Integrity
 						</h3>
@@ -26,7 +26,7 @@ const Values: React.FC = () => {
 						</p>
 					</div>
 					<div className='flex flex-col items-center'>
-						<CurrencyDollarIcon className='h-20 w-20 mb-2 text-teal-600' />
+						<CurrencyDollarIcon className='h-20 w-20 mb-2 bg-primary/60' />
 						<h3 className='text-xl font-bold mb-2'>
 							Client-Centric Focus
 						</h3>
@@ -41,7 +41,7 @@ const Values: React.FC = () => {
 						</p>
 					</div>
 					<div className='flex flex-col items-center'>
-						<LightBulbIcon className='h-20 w-20 mb-2 text-teal-600' />
+						<LightBulbIcon className='h-20 w-20 mb-2 bg-primary/60' />
 						<h3 className='text-xl font-bold mb-2'>
 							Education and Empowerment
 						</h3>

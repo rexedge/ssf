@@ -5,7 +5,7 @@ import Link from 'next/link';
 import React from 'react';
 
 const Footer = () => (
-	<footer className='bg-teal-800 text-white py-8'>
+	<footer className='bg-primary-foreground text-primary py-8 border-t'>
 		<div className='mx-auto px-10'>
 			<div className='flex flex-wrap justify-between'>
 				<div className='w-full md:w-1/2 lg:w-2/5 mb-8 lg:mb-0'>
@@ -17,7 +17,7 @@ const Footer = () => (
 							height={50}
 							width={50}
 							alt=''
-							src={'/ssf.png'}
+							src={'/standalone.png'}
 							className='dark:invert'
 						/>
 					</Link>

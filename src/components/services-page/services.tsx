@@ -32,7 +32,7 @@ const ServiceList: React.FC = () => {
 				{SERVICES.map((service, index) => (
 					<motion.div
 						key={index}
-						className='p-4 rounded shadow text-center cursor-pointer bg-teal-100 dark:bg-teal-800'
+						className='p-4 rounded shadow text-center cursor-pointer bg-primary dark:bg-primary-foreground'
 						variants={cardVariants}
 					>
 						<h3 className='text-xl font-bold mb-2'>

@@ -3,7 +3,7 @@ import React from 'react';
 
 const VisionAndMission: React.FC = () => {
 	return (
-		<section className='flex flex-col items-center justify-center min-h-screen bg-teal-100 dark:bg-teal-800 py-10'>
+		<section className='flex flex-col items-center justify-center min-h-screen bg-primary dark:bg-primary-foreground py-10'>
 			<h1 className='text-4xl font-bold mb-8 text-center'>
 				Our Vision and Mission
 			</h1>

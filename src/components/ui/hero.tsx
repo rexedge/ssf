@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import Button from './button';
+import Button from '../shared/button';
 import { COMPANY_PROFILE } from '@/utils/const';
 
 interface HeroSectionProps {
@@ -27,7 +27,7 @@ const Hero: React.FC<HeroSectionProps> = ({ title, description, image }) => {
 				<p className='text-lg mb-8'>{description}</p>
 				<Button
 					href={COMPANY_PROFILE.calendly}
-					className='shrink-0 text-sm py-2 px-4 dark:bg-teal-900 bg-teal-200 text-black dark:text-white hover:bg-teal-400 dark:hover:bg-teal-700 rounded-lg cursor-pointer'
+					className='shrink-0 text-sm py-2 px-4 dark:bg-primary bg-primary/20 text-black dark:text-white hover:bg-primary/40 dark:hover:bg-primary/70 rounded-lg cursor-pointer'
 				>
 					Get Started
 				</Button>

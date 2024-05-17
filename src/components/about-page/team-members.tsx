@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
-import Button from '../ui/button';
+import Button from '../shared/button';
 
 interface TeamMember {
 	name: string;
@@ -46,7 +46,7 @@ const Team: React.FC<TeamProps> = ({ teamMembers }) => {
 						<div
 							key={index}
 							onClick={() => openModal(member)}
-							className='bg-teal-100 dark:bg-teal-800 rounded-lg p-6 shadow-md'
+							className='bg-primary dark:bg-primary-foreground rounded-lg p-6 shadow-md'
 						>
 							<Image
 								src={member.photo}

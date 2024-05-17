@@ -11,7 +11,7 @@ export default function Products() {
 				image='/products.jpg'
 			/>
 			<ProductList />
-			<section className='flex flex-col justify-center px-4 py-20 items-center bg-teal-100 dark:bg-teal-800'>
+			<section className='flex flex-col justify-center px-4 py-20 items-center bg-primary dark:bg-primary-foreground'>
 				By offering a range of tailored products, we strive to
 				provide comprehensive financial solutions that meet your
 				specific needs and goals. We invite you to explore each

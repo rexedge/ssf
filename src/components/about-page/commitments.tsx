@@ -3,7 +3,7 @@ import React from 'react';
 
 const Commitment: React.FC = () => {
 	return (
-		<section className='bg-teal-100 dark:bg-teal-800 py-20 px-4'>
+		<section className='bg-primary dark:bg-primary-foreground py-20 px-4'>
 			<h2 className='text-4xl font-bold mb-4 text-center'>
 				Our Commitment
 			</h2>
