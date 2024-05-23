@@ -3,14 +3,14 @@ import React from 'react';
 
 const VisionAndMission: React.FC = () => {
 	return (
-		<section className='flex flex-col items-center justify-center min-h-screen bg-primary dark:bg-primary-foreground py-10'>
-			<h1 className='text-4xl font-bold mb-8 text-center'>
+		<section className='flex flex-col items-center justify-center min-h-screen bg-primary text-primary-foreground py-10'>
+			<h1 className='text-4xl font-bold mb-8 text-center border-b-2'>
 				Our Vision and Mission
 			</h1>
-			<div className='container mx-auto p-4'>
+			<div className='max-w-6xl p-5 mx-auto'>
 				<div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
 					<div>
-						<h2 className='text-2xl font-bold mb-4'>
+						<h2 className='text-2xl font-bold mb-4 text-tertiary'>
 							Our Vision
 						</h2>
 						<p className='mb-2'>
@@ -35,7 +35,7 @@ const VisionAndMission: React.FC = () => {
 						</p>
 					</div>
 					<div>
-						<h2 className='text-2xl font-bold mb-4'>
+						<h2 className='text-2xl font-bold mb-4 text-tertiary'>
 							Our Mission
 						</h2>
 						<p className='mb-2'>

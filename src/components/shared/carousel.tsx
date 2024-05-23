@@ -48,7 +48,7 @@ export function CarouselGroup() {
 							/>
 							<div className='absolute flex items-center justify-center bottom-0 top-0 right-0 left-0 z-30 p-4 text-white'>
 								<div className='absolute z-10 left-0 right-0 top-0 bottom-0 bg-black bg-opacity-40 flex items-center justify-center'>
-									<div className='text-center'>
+									<div className='text-center mx-auto max-w-3xl'>
 										{image.title && (
 											<h1 className='font-bold text-2xl md:text-5xl lg:text-7xl mb-3 md:mb-6 lg:mb-9'>
 												{image.title}

@@ -1,5 +1,6 @@
 import { COMPANY_PROFILE } from '@/utils/const';
 import FormatAddress from '@/utils/format-address';
+import { Facebook, Instagram } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -83,34 +84,20 @@ const Footer = () => (
 					<ul className='space-y-2'>
 						<li>
 							<a
-								href='#'
-								className=' hover:text-gray-300'
+								href='https://www.facebook.com/profile.php?id=61557891714191'
+								className=' hover:text-tertiary items-center flex gap-2'
 							>
-								Facebook
+								<Facebook className='h-5 w-5' />
+								Facebook{' '}
 							</a>
 						</li>
 						<li>
 							<a
-								href='#'
-								className=' hover:text-gray-300'
+								href='https://www.instagram.com/smartsteps_solution/'
+								className=' hover:text-tertiary items-center flex gap-2'
 							>
-								Twitter
-							</a>
-						</li>
-						<li>
-							<a
-								href='#'
-								className=' hover:text-gray-300'
-							>
-								Instagram
-							</a>
-						</li>
-						<li>
-							<a
-								href='#'
-								className=' hover:text-gray-300'
-							>
-								LinkedIn
+								<Instagram className='h-5 w-5' />
+								Instagram{' '}
 							</a>
 						</li>
 					</ul>
@@ -118,12 +105,10 @@ const Footer = () => (
 			</div>
 			<hr className='my-6 border-gray-200' />
 			<div className='text-center'>
-				<Link href={'https://rexedge.xyz'}>
-					<p className=''>
-						&copy; {new Date().getFullYear()} Rex Edge Design
-						Studio. All rights reserved.
-					</p>
-				</Link>
+				<p className=''>
+					&copy; {new Date().getFullYear()} Smart Steps Financial
+					Solutions. All rights reserved.
+				</p>
 			</div>
 		</div>
 	</footer>

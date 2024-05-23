@@ -8,11 +8,13 @@ import {
 const Expertise: React.FC = () => {
 	return (
 		<section className='min-h-full'>
-			<div className='container mx-auto px-4 py-10 text-center'>
-				<h2 className='text-4xl font-bold mb-16'>Our Expertise</h2>
+			<div className='max-w-6xl flex flex-col mx-auto px-4 py-10 text-center'>
+				<h2 className='text-4xl font-bold mb-16 text-tertiary'>
+					Our Expertise
+				</h2>
 				<div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4'>
 					<div className='flex flex-col items-center'>
-						<DocumentTextIcon className='bg-primary/70 h-20 w-20 mb-5' />
+						<DocumentTextIcon className='text-tertiary h-16 w-16' />
 						<div>
 							<h3 className='text-xl font-bold mb-2'>
 								Experienced Professionals
@@ -30,7 +32,7 @@ const Expertise: React.FC = () => {
 						</div>
 					</div>
 					<div className='flex flex-col items-center'>
-						<CurrencyDollarIcon className='bg-primary/70 h-20 w-20 mb-5' />
+						<CurrencyDollarIcon className='text-tertiary h-16 w-16' />
 						<div>
 							<h3 className='text-xl font-bold mb-2'>
 								Holistic Approach
@@ -48,7 +50,7 @@ const Expertise: React.FC = () => {
 						</div>
 					</div>
 					<div className='flex flex-col items-center'>
-						<AcademicCapIcon className='bg-primary/70 h-20 w-20 mb-5' />
+						<AcademicCapIcon className='text-tertiary h-16 w-16' />
 						<div>
 							<h3 className='text-xl font-bold mb-2'>
 								Continuous Learning

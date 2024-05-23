@@ -1,7 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-import Button from '../shared/button';
 import { COMPANY_PROFILE } from '@/utils/const';
+import { Button } from './button';
+import Link from 'next/link';
 
 interface HeroSectionProps {
 	title: string;
@@ -11,7 +12,7 @@ interface HeroSectionProps {
 
 const Hero: React.FC<HeroSectionProps> = ({ title, description, image }) => {
 	return (
-		<div className='relative bg-gray-900 text-white pb-16 min-h-screen'>
+		<div className='relative bg-gray-900 text-white pb-16 min-h-[100svh] lg:min-h-[50svh]'>
 			<div className='absolute inset-0 w-full h-full'>
 				<Image
 					src={image}
@@ -24,12 +25,13 @@ const Hero: React.FC<HeroSectionProps> = ({ title, description, image }) => {
 			</div>
 			<div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full px-4'>
 				<h1 className='text-4xl font-bold mb-2'>{title}</h1>
-				<p className='text-lg mb-8'>{description}</p>
-				<Button
-					href={COMPANY_PROFILE.calendly}
-					className='shrink-0 text-sm py-2 px-4 dark:bg-primary bg-primary/20 text-black dark:text-white hover:bg-primary/40 dark:hover:bg-primary/70 rounded-lg cursor-pointer'
-				>
-					Get Started
+				<p className='text-lg mb-8 mx-auto max-w-3xl'>
+					{description}
+				</p>
+				<Button asChild>
+					<Link href={COMPANY_PROFILE.calendly}>
+						Get Started
+					</Link>
 				</Button>
 			</div>
 		</div>

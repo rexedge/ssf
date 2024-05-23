@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
-import Button from '../shared/button';
+import { Button } from '../ui/button';
 
 interface TeamMember {
 	name: string;
@@ -30,11 +30,11 @@ const Team: React.FC<TeamProps> = ({ teamMembers }) => {
 
 	return (
 		<section className='min-h-full'>
-			<div className='container mx-auto px-4 py-10'>
-				<h2 className='text-4xl font-bold mb-4 text-center'>
+			<div className='max-w-6xl mx-auto px-4 py-10'>
+				<h2 className='text-4xl font-bold mb-4 text-center text-tertiary'>
 					Meet Our Experts
 				</h2>
-				<div className='mb-5'>
+				<div className='mb-5 text-center max-w-3xl mx-auto'>
 					Our team of financial professionals brings a diverse
 					range of expertise and backgrounds. With their combined
 					knowledge and dedication, they are here to guide you
@@ -46,7 +46,7 @@ const Team: React.FC<TeamProps> = ({ teamMembers }) => {
 						<div
 							key={index}
 							onClick={() => openModal(member)}
-							className='bg-primary dark:bg-primary-foreground rounded-lg p-6 shadow-md'
+							className='bg-tertiary/20 rounded-lg p-3 md:p-6 shadow-md'
 						>
 							<Image
 								src={member.photo}
@@ -61,7 +61,7 @@ const Team: React.FC<TeamProps> = ({ teamMembers }) => {
 							<p className='text-gray-600 mb-4'>
 								{member.position}
 							</p>
-							<p>{member.bio}</p>
+							<p className='line-clamp-2 '>{member.bio}</p>
 						</div>
 					))}
 				</div>
@@ -92,6 +92,7 @@ const Team: React.FC<TeamProps> = ({ teamMembers }) => {
 							</p>
 							<p>{selectedMember.bio}</p>
 							<Button
+								variant={'destructive'}
 								className='mt-4 outline-dotted'
 								onClick={closeModal}
 							>

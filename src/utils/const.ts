@@ -1,9 +1,9 @@
 export const COMPANY_PROFILE = {
 	name: 'Smart Steps Financial',
 	tagline: 'Empowering Your Financial Future',
-	address: '8015 Barnes Ridge Ln, Houston TX, 77072',
+	address: 'Barnes Ridge Ln, Houston TX, 77072',
 	phone: '+1-346-270-5671',
-	email: 'info@smartstepsfinance.com',
+	email: 'info@smartstepssolutions.com',
 	calendly: 'https://calendly.com/ssfinance',
 };
 
@@ -20,7 +20,7 @@ export const CAROUSEL_IMAGES = [
 		id: '2',
 		src: '/slide2.jpg',
 		alt: 'Image 2',
-		title: COMPANY_PROFILE.name,
+		title: 'Helping to fight financial ignorance',
 		description: COMPANY_PROFILE.tagline,
 		buttonText: 'Book consultation',
 	},
@@ -172,7 +172,7 @@ export const PARTNERS = [
 	},
 	{
 		id: '1',
-		name: 'DebtMedic',
+		name: 'Debt Relief',
 		image: '/choice/31.png',
 		href: 'https://debtmedic.ca/',
 	},
@@ -220,7 +220,7 @@ export const PARTNERS = [
 	},
 	{
 		id: '9',
-		name: 'Build an Agency',
+		name: 'Build an Agency Cash Flow',
 		image: '/choice/40.png',
 		href: '/build-an-agency',
 	},
