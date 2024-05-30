@@ -4,7 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-const ServiceList: React.FC = () => {
+const ResourcesList: React.FC = () => {
 	const [ref, inView] = useInView({
 		triggerOnce: true,
 		threshold: 0.1,
@@ -46,4 +46,4 @@ const ServiceList: React.FC = () => {
 	);
 };
 
-export default ServiceList;
+export default ResourcesList;

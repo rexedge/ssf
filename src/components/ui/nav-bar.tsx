@@ -49,6 +49,7 @@ import {
 	AccordionItem,
 	AccordionTrigger,
 } from './accordion';
+import { Ghost } from 'lucide-react';
 
 const LIFE_INSURANCE: {
 	title: string;
@@ -67,26 +68,86 @@ const LIFE_INSURANCE: {
 		description: 'Learn more about whole life insurance.',
 	},
 	{
-		title: 'IUL',
+		title: 'Indexed Universal Life (IUL)',
 		href: '/iul',
 		description: 'Learn more about indexed universal life insurance.',
+	},
+];
+const ANNUITY: {
+	title: string;
+	href: string;
+	description: string;
+}[] = [
+	{
+		title: 'Fixed annuities',
+		href: '/annuity#fixed-annuities',
+		description: 'Learn more about fixed annuities.',
+	},
+	{
+		title: 'Fixed indexed annuities',
+		href: '/annuity#fixed-indexed-annuities',
+		description: 'Learn more about Fixed indexed annuities.',
+	},
+	{
+		title: 'Variable annuities',
+		href: '/annuity#variable-annuities',
+		description: 'Learn more about Variable annuities.',
+	},
+];
+const BUSINESS_OWNER: {
+	title: string;
+	href: string;
+	description: string;
+}[] = [
+	{
+		title: 'Executive Bonus Plan',
+		href: '/business-owner#executive-bonus-plan',
+		description: 'Learn more about Executive Bonus Plan.',
+	},
+	{
+		title: 'Key Person Insurance',
+		href: '/business-owner#key-person-insurance',
+		description: 'Learn more about Key Person Insurance.',
+	},
+];
+
+const PRODUCT_LIST: {
+	title: string;
+	href: string;
+	description: string;
+}[] = [
+	{
+		title: 'Life Insurance',
+		href: '/life-insurance',
+		description: 'Description for life insurance',
+	},
+	{
+		title: 'Annuity',
+		href: '/annuity',
+		description: 'Description for Annuity',
+	},
+	{
+		title: 'Mortgage Protection',
+		href: '/mortgage-protection',
+		description: 'Description for mortgage protection',
 	},
 	{
 		title: 'Final Expense',
 		href: '/final-expense',
-		description: 'Learn more about the final expense plan.',
+		description: 'Description for final expense',
 	},
 	{
-		title: 'Mortgage Protection',
-		href: '/mortgage-protection',
-		description: 'Learn more about mortgage protection insurance.',
+		title: 'Account 7702(b)',
+		href: '/college-savings',
+		description: 'Description for account 7702(b)',
 	},
 	{
-		title: 'Mortgage Protection',
-		href: '/mortgage-protection',
-		description: 'Learn more about mortgage protection insurance.',
+		title: 'Business Owner',
+		href: '/business-owner',
+		description: 'Learn more about our business owner service',
 	},
 ];
+
 const SERVICES_LIST: {
 	title: string;
 	href: string;
@@ -112,16 +173,16 @@ const SERVICES_LIST: {
 		href: '/estate-planning',
 		description: 'Learn more about our estate planning service',
 	},
-	{
-		title: 'Long Term Plan',
-		href: '/long-term-plan',
-		description: 'Learn more about our long term plan service',
-	},
-	{
-		title: 'Debt Relief',
-		href: '/debt-relief',
-		description: 'Learn more about our debt relief service',
-	},
+	// {
+	// 	title: 'Long Term Plan',
+	// 	href: '/long-term-plan',
+	// 	description: 'Learn more about our long term plan service',
+	// },
+	// {
+	// 	title: 'Debt Relief',
+	// 	href: '/debt-relief',
+	// 	description: 'Learn more about our debt relief service',
+	// },
 ];
 
 export default function NavBar() {
@@ -168,114 +229,178 @@ export default function NavBar() {
 					/>
 				</Link>
 				<div className='lg:flex justify-center w-full hidden'>
-					<NavigationMenu>
-						<NavigationMenuList>
-							<NavigationMenuItem>
-								<Link
-									href='/about'
-									legacyBehavior
-									passHref
-								>
-									<NavigationMenuLink
-										className={navigationMenuTriggerStyle()}
-										active={pathName?.startsWith(
-											'/about'
-										)}
-									>
-										ABOUT
-									</NavigationMenuLink>
-								</Link>
-							</NavigationMenuItem>
-							<NavigationMenuItem>
-								<NavigationMenuTrigger>
-									LIFE INSURANCE
-								</NavigationMenuTrigger>
-								<NavigationMenuContent>
-									<ul className='grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] '>
-										{LIFE_INSURANCE.map(
-											(component) => (
-												<ListItem
-													key={
-														component.title
-													}
-													title={
-														component.title
-													}
-													href={
-														component.href
-													}
+					<div className='flex items-center gap-3'>
+						<Button
+							asChild
+							variant={
+								pathName === '/' ? 'ghost' : 'outline'
+							}
+						>
+							<Link href={'/'}>HOME</Link>
+						</Button>
+						<DropdownMenu>
+							<DropdownMenuTrigger asChild>
+								<Button variant={'outline'}>
+									PRODUCTS
+								</Button>
+							</DropdownMenuTrigger>
+							<DropdownMenuContent className='w-full'>
+								<DropdownMenuSub>
+									<DropdownMenuSubTrigger>
+										<Link
+											className='w-full'
+											href={'/life-insurance'}
+										>
+											Life Insurance
+										</Link>
+									</DropdownMenuSubTrigger>
+									<DropdownMenuPortal>
+										<DropdownMenuSubContent>
+											{LIFE_INSURANCE.map(
+												(a, b) => (
+													<DropdownMenuItem
+														key={b}
+														asChild
+													>
+														<Link
+															href={
+																a.href
+															}
+														>
+															{
+																a.title
+															}
+														</Link>
+													</DropdownMenuItem>
+												)
+											)}
+										</DropdownMenuSubContent>
+									</DropdownMenuPortal>
+								</DropdownMenuSub>
+								<DropdownMenuSub>
+									<DropdownMenuSubTrigger>
+										<Link
+											href={'/annuity'}
+											className='w-full'
+										>
+											Annuity
+										</Link>
+									</DropdownMenuSubTrigger>
+									<DropdownMenuPortal>
+										<DropdownMenuSubContent>
+											{ANNUITY.map((a, b) => (
+												<DropdownMenuItem
+													key={b}
+													asChild
 												>
-													{
-														component.description
-													}
-												</ListItem>
-											)
-										)}
-									</ul>
-								</NavigationMenuContent>
-							</NavigationMenuItem>
-							<NavigationMenuItem>
-								<NavigationMenuTrigger>
+													<Link
+														href={
+															a.href
+														}
+													>
+														{a.title}
+													</Link>
+												</DropdownMenuItem>
+											))}
+										</DropdownMenuSubContent>
+									</DropdownMenuPortal>
+								</DropdownMenuSub>
+								<DropdownMenuSub>
+									<DropdownMenuSubTrigger>
+										<Link
+											className='w-full'
+											href={'/business-owner'}
+										>
+											Business Owner
+										</Link>
+									</DropdownMenuSubTrigger>
+									<DropdownMenuPortal>
+										<DropdownMenuSubContent>
+											{BUSINESS_OWNER.map(
+												(a, b) => (
+													<DropdownMenuItem
+														key={b}
+														asChild
+													>
+														<Link
+															href={
+																a.href
+															}
+														>
+															{
+																a.title
+															}
+														</Link>
+													</DropdownMenuItem>
+												)
+											)}
+										</DropdownMenuSubContent>
+									</DropdownMenuPortal>
+								</DropdownMenuSub>
+								<DropdownMenuItem>
+									<Link
+										className='w-full'
+										href={'/final-expense'}
+									>
+										Final Expense
+									</Link>
+								</DropdownMenuItem>
+								<DropdownMenuItem>
+									<Link
+										className='w-full'
+										href={'/mortgage-protection'}
+									>
+										Mortgage Protection
+									</Link>
+								</DropdownMenuItem>
+								<DropdownMenuItem>
+									<Link
+										className='w-full'
+										href={'/college-savings'}
+									>
+										Account 7702(b)
+									</Link>
+								</DropdownMenuItem>
+							</DropdownMenuContent>
+						</DropdownMenu>
+						<DropdownMenu>
+							<DropdownMenuTrigger asChild>
+								<Button variant={'outline'}>
 									SERVICES
-								</NavigationMenuTrigger>
-								<NavigationMenuContent>
-									<ul className='grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] '>
-										{SERVICES_LIST.map(
-											(component) => (
-												<ListItem
-													key={
-														component.title
-													}
-													title={
-														component.title
-													}
-													href={
-														component.href
-													}
-												>
-													{
-														component.description
-													}
-												</ListItem>
-											)
-										)}
-									</ul>
-								</NavigationMenuContent>
-							</NavigationMenuItem>
-							<NavigationMenuItem>
-								<Link
-									href='/contact'
-									legacyBehavior
-									passHref
-								>
-									<NavigationMenuLink
-										className={navigationMenuTriggerStyle()}
-										active={pathName?.startsWith(
-											'/contact'
-										)}
-									>
-										CONTACT
-									</NavigationMenuLink>
-								</Link>
-							</NavigationMenuItem>
-							<NavigationMenuItem>
-								<Link
-									href='/resources'
-									legacyBehavior
-									passHref
-								>
-									<NavigationMenuLink
-										className={navigationMenuTriggerStyle()}
-										active={pathName?.startsWith(
-											'/resources'
-										)}
-									>
-										RESOURCES
-									</NavigationMenuLink>
-								</Link>
-							</NavigationMenuItem>
-						</NavigationMenuList>
-					</NavigationMenu>
+								</Button>
+							</DropdownMenuTrigger>
+							<DropdownMenuContent className='w-full'>
+								{SERVICES_LIST.map((a, b) => (
+									<DropdownMenuItem key={b}>
+										<Link
+											className='w-full'
+											href={a.href}
+										>
+											{a.title}
+										</Link>
+									</DropdownMenuItem>
+								))}
+							</DropdownMenuContent>
+						</DropdownMenu>
+						<Button
+							variant={'outline'}
+							asChild
+						>
+							<Link href={'/resources'}>RESOURCES</Link>
+						</Button>
+						<Button
+							variant={'outline'}
+							asChild
+						>
+							<Link href={'/contact'}>CONTACT</Link>
+						</Button>
+						<Button
+							variant={'outline'}
+							asChild
+						>
+							<Link href={'/about'}>ABOUT US</Link>
+						</Button>
+					</div>
 				</div>
 				<Button
 					variant={'tertiary'}

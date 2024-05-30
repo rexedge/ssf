@@ -168,19 +168,19 @@ export const PARTNERS = [
 		id: '0',
 		name: 'Estate Planning',
 		image: '/choice/30.png',
-		href: 'https://www.netlaw.com/',
+		href: '/estate-planning',
 	},
 	{
 		id: '1',
 		name: 'Debt Relief',
 		image: '/choice/31.png',
-		href: 'https://debtmedic.ca/',
+		href: '/debt-relief',
 	},
 	{
 		id: '2',
 		name: 'College Savings Fund',
 		image: '/choice/32.jpg',
-		href: '/college-savings-fund',
+		href: '/college-savings',
 	},
 	{
 		id: '3',
@@ -198,7 +198,7 @@ export const PARTNERS = [
 		id: '5',
 		name: 'FIA - Personal Pension Plan',
 		image: '/choice/35.png',
-		href: '/fia',
+		href: '/annuity',
 	},
 	{
 		id: '6',
