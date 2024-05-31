@@ -110,44 +110,6 @@ const BUSINESS_OWNER: {
 		description: 'Learn more about Key Person Insurance.',
 	},
 ];
-
-const PRODUCT_LIST: {
-	title: string;
-	href: string;
-	description: string;
-}[] = [
-	{
-		title: 'Life Insurance',
-		href: '/life-insurance',
-		description: 'Description for life insurance',
-	},
-	{
-		title: 'Annuity',
-		href: '/annuity',
-		description: 'Description for Annuity',
-	},
-	{
-		title: 'Mortgage Protection',
-		href: '/mortgage-protection',
-		description: 'Description for mortgage protection',
-	},
-	{
-		title: 'Final Expense',
-		href: '/final-expense',
-		description: 'Description for final expense',
-	},
-	{
-		title: 'Account 7702(b)',
-		href: '/college-savings',
-		description: 'Description for account 7702(b)',
-	},
-	{
-		title: 'Business Owner',
-		href: '/business-owner',
-		description: 'Learn more about our business owner service',
-	},
-];
-
 const SERVICES_LIST: {
 	title: string;
 	href: string;
@@ -445,12 +407,6 @@ export default function NavBar() {
 							>
 								<Link href={'/'}>HOME</Link>
 							</SheetClose>
-							<SheetClose
-								asChild
-								className='mb-4'
-							>
-								<Link href={'/about'}>ABOUT</Link>
-							</SheetClose>
 							<Accordion
 								type='single'
 								collapsible
@@ -461,26 +417,163 @@ export default function NavBar() {
 									value='item-1'
 								>
 									<AccordionTrigger className='font-normal h-10'>
-										LIFE INSURANCE
+										PRODUCTS
 									</AccordionTrigger>
-									<AccordionContent className='grid pl-5'>
-										{LIFE_INSURANCE.map(
-											({ href, title }, k) => (
-												<SheetClose
-													asChild
-													key={k}
+									<AccordionContent className='grid pl-2'>
+										<Accordion
+											type='single'
+											collapsible
+											className='w-full mb-3 grid'
+										>
+											<AccordionItem
+												className='border-0'
+												value='life-insurance'
+											>
+												<AccordionTrigger className='font-normal h-10'>
+													LIFE INSURANCE
+												</AccordionTrigger>
+												<AccordionContent className='grid pl-2 gap-2'>
+													{LIFE_INSURANCE.map(
+														(
+															{
+																href,
+																title,
+															},
+															k
+														) => (
+															<SheetClose
+																asChild
+																key={
+																	k
+																}
+															>
+																<Link
+																	className='uppercase'
+																	href={
+																		href
+																	}
+																>
+																	{
+																		title
+																	}
+																</Link>
+															</SheetClose>
+														)
+													)}
+												</AccordionContent>
+											</AccordionItem>
+											<AccordionItem
+												className='border-0'
+												value='annuity'
+											>
+												<AccordionTrigger className='font-normal h-10'>
+													ANNUITY
+												</AccordionTrigger>
+												<AccordionContent className='grid pl-2 gap-2'>
+													{ANNUITY.map(
+														(
+															{
+																href,
+																title,
+															},
+															k
+														) => (
+															<SheetClose
+																asChild
+																key={
+																	k
+																}
+															>
+																<Link
+																	className='uppercase'
+																	href={
+																		href
+																	}
+																>
+																	{
+																		title
+																	}
+																</Link>
+															</SheetClose>
+														)
+													)}
+												</AccordionContent>
+											</AccordionItem>
+											<AccordionItem
+												className='border-0 mb-3'
+												value='business-owner'
+											>
+												<AccordionTrigger className='font-normal h-10'>
+													BUSINESS OWNER
+												</AccordionTrigger>
+												<AccordionContent className='grid pl-2 gap-2'>
+													{BUSINESS_OWNER.map(
+														(
+															{
+																href,
+																title,
+															},
+															k
+														) => (
+															<SheetClose
+																asChild
+																key={
+																	k
+																}
+															>
+																<Link
+																	className='uppercase'
+																	href={
+																		href
+																	}
+																>
+																	{
+																		title
+																	}
+																</Link>
+															</SheetClose>
+														)
+													)}
+												</AccordionContent>
+											</AccordionItem>
+											<SheetClose
+												asChild
+												className='mb-5'
+											>
+												<Link
+													href={
+														'/final-expense'
+													}
 												>
-													<Link
-														className='uppercase'
-														href={
-															href
-														}
-													>
-														{title}
-													</Link>
-												</SheetClose>
-											)
-										)}
+													FINAL EXPENSE
+												</Link>
+											</SheetClose>
+											<SheetClose
+												asChild
+												className='mb-5'
+											>
+												<Link
+													href={
+														'/mortgage-protection'
+													}
+												>
+													MORTGAGE
+													PROTECTION
+												</Link>
+											</SheetClose>
+											<SheetClose
+												asChild
+												className='mb-5'
+											>
+												<Link
+													href={
+														'/college-savings'
+													}
+												>
+													ACCOUNT 7702(b)
+												</Link>
+											</SheetClose>
+										</Accordion>
 									</AccordionContent>
 								</AccordionItem>
 								<AccordionItem
@@ -490,7 +583,7 @@ export default function NavBar() {
 									<AccordionTrigger className='font-normal'>
 										SERVICES
 									</AccordionTrigger>
-									<AccordionContent className='grid pl-5'>
+									<AccordionContent className='grid gap-5 pl-5'>
 										{SERVICES_LIST.map(
 											({ href, title }, k) => (
 												<SheetClose
@@ -524,6 +617,12 @@ export default function NavBar() {
 								<Link href={'/resources'}>
 									RESOURCES
 								</Link>
+							</SheetClose>
+							<SheetClose
+								asChild
+								className='mb-6'
+							>
+								<Link href={'/about'}>ABOUT US</Link>
 							</SheetClose>
 							<SheetClose
 								asChild

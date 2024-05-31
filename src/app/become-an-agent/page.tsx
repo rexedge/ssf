@@ -439,8 +439,11 @@ export default function BecomeAnAgent() {
 							control={form.control}
 							name='phone'
 							render={({ field }) => (
-								<FormItem>
-									<FormLabel>Phone Number</FormLabel>
+								<FormItem className='lg:col-span-2'>
+									<FormLabel>
+										Can you briefly tell us about
+										your previous work experience?
+									</FormLabel>
 									<FormControl>
 										<Textarea
 											{...field}
