@@ -15,6 +15,9 @@ export const BecomeAnAgentSchema = z.object({
 	workexperience: z.string(),
 	motivation: z.string(),
 	street: z.string(),
+	city: z.string(),
+	state: z.string(),
+	postal: z.string(),
 	occupation: z.string(),
 	hearaboutus: z
 		.array(z.string())

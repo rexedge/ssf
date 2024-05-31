@@ -22,6 +22,7 @@ import { BecomeAnAgentSchema } from '@/schemas';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Textarea } from '@/components/ui/textarea';
 import { Checkbox } from '@/components/ui/checkbox';
+import { submitBecomeAnAgentForm } from '@/actions/become-an-agent';
 
 const hearaboutus = [
 	{
@@ -67,15 +68,15 @@ export default function BecomeAnAgent() {
 		const { email } = values;
 
 		startTransition(() => {
-			// joinWaitlist({ email }).then((data) => {
-			// 	if (data?.success) {
-			// 		toast.success(data.success);
-			// 		form.reset();
-			// 	}
-			// 	if (data?.error) {
-			// 		toast.error(data.error);
-			// 	}
-			// });
+			submitBecomeAnAgentForm(values).then((data) => {
+				if (data?.success) {
+					toast.success(data.success);
+					form.reset();
+				}
+				if (data?.error) {
+					toast.error(data.error);
+				}
+			});
 			console.log({ values });
 			form.reset();
 		});
@@ -532,7 +533,7 @@ export default function BecomeAnAgent() {
 						/>
 						<FormField
 							control={form.control}
-							name='street'
+							name='city'
 							render={({ field }) => (
 								<FormItem className=''>
 									<FormLabel>City</FormLabel>
@@ -549,7 +550,7 @@ export default function BecomeAnAgent() {
 						/>
 						<FormField
 							control={form.control}
-							name='street'
+							name='state'
 							render={({ field }) => (
 								<FormItem className=''>
 									<FormLabel>
@@ -570,7 +571,7 @@ export default function BecomeAnAgent() {
 						/>
 						<FormField
 							control={form.control}
-							name='street'
+							name='postal'
 							render={({ field }) => (
 								<FormItem className='lg:col-span-2'>
 									<FormLabel>
@@ -701,12 +702,16 @@ export default function BecomeAnAgent() {
 								</FormItem>
 							)}
 						/>
-						<div className='lg:col-span-2'>
-							<FormError message='Error' />
-						</div>
-						<div className='lg:col-span-2'>
-							<FormSuccess message='Success' />
-						</div>
+						{error && (
+							<div className='lg:col-span-2'>
+								<FormError message='Error' />
+							</div>
+						)}
+						{success && (
+							<div className='lg:col-span-2'>
+								<FormSuccess message='Success' />
+							</div>
+						)}
 						<Button
 							type='submit'
 							className='lg:col-span-2'
