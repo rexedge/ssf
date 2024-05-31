@@ -21,6 +21,34 @@ import FormSuccess from '@/components/ui/FormSuccess';
 import { BecomeAnAgentSchema } from '@/schemas';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Textarea } from '@/components/ui/textarea';
+import { Checkbox } from '@/components/ui/checkbox';
+
+const hearaboutus = [
+	{
+		id: 'facebook',
+		label: 'Facebook/Facebook Ad',
+	},
+	{
+		id: 'instagram,',
+		label: 'Instagram/Instagram Ad',
+	},
+	{
+		id: 'youtube,',
+		label: 'Youtube',
+	},
+	{
+		id: 'google,',
+		label: 'Google/Google Ad',
+	},
+	{
+		id: 'website,',
+		label: 'Website',
+	},
+	{
+		id: 'others,',
+		label: 'Others',
+	},
+] as const;
 
 export default function BecomeAnAgent() {
 	const [error, setError] = useState<string | undefined>('');
@@ -437,7 +465,7 @@ export default function BecomeAnAgent() {
 						/>
 						<FormField
 							control={form.control}
-							name='phone'
+							name='workexperience'
 							render={({ field }) => (
 								<FormItem className='lg:col-span-2'>
 									<FormLabel>
@@ -457,11 +485,237 @@ export default function BecomeAnAgent() {
 								</FormItem>
 							)}
 						/>
+						<FormField
+							control={form.control}
+							name='motivation'
+							render={({ field }) => (
+								<FormItem className='lg:col-span-2'>
+									<FormLabel>
+										Do you consider yourself
+										self-motivated? Provide an
+										example.
+									</FormLabel>
+									<FormControl>
+										<Textarea
+											{...field}
+											placeholder={
+												'Type here...'
+											}
+											disabled={isPending}
+										/>
+									</FormControl>
+									<FormMessage />
+								</FormItem>
+							)}
+						/>
+						<FormField
+							control={form.control}
+							name='street'
+							render={({ field }) => (
+								<FormItem className='lg:col-span-2'>
+									<FormLabel>
+										What city / state do you live
+										in?
+									</FormLabel>
+									<FormControl>
+										<Input
+											{...field}
+											placeholder={
+												'Street address'
+											}
+											disabled={isPending}
+										/>
+									</FormControl>
+									<FormMessage />
+								</FormItem>
+							)}
+						/>
+						<FormField
+							control={form.control}
+							name='street'
+							render={({ field }) => (
+								<FormItem className=''>
+									<FormLabel>City</FormLabel>
+									<FormControl>
+										<Input
+											{...field}
+											placeholder={'city'}
+											disabled={isPending}
+										/>
+									</FormControl>
+									<FormMessage />
+								</FormItem>
+							)}
+						/>
+						<FormField
+							control={form.control}
+							name='street'
+							render={({ field }) => (
+								<FormItem className=''>
+									<FormLabel>
+										State/Province
+									</FormLabel>
+									<FormControl>
+										<Input
+											{...field}
+											placeholder={
+												'state/province'
+											}
+											disabled={isPending}
+										/>
+									</FormControl>
+									<FormMessage />
+								</FormItem>
+							)}
+						/>
+						<FormField
+							control={form.control}
+							name='street'
+							render={({ field }) => (
+								<FormItem className='lg:col-span-2'>
+									<FormLabel>
+										Postal/Zip Code
+									</FormLabel>
+									<FormControl>
+										<Input
+											{...field}
+											placeholder={
+												'postal/zip code'
+											}
+											disabled={isPending}
+										/>
+									</FormControl>
+									<FormMessage />
+								</FormItem>
+							)}
+						/>
+						<FormField
+							control={form.control}
+							name='hearaboutus'
+							render={({ field }) => (
+								<FormItem className='lg:col-span-2'>
+									<FormLabel>
+										How did you hear about us?
+									</FormLabel>
+									{hearaboutus.map((item) => (
+										<FormField
+											key={item.id}
+											control={form.control}
+											name='hearaboutus'
+											render={({ field }) => {
+												return (
+													<FormItem
+														key={
+															item.id
+														}
+														className='flex flex-row items-center space-x-3 space-y-0'
+													>
+														<FormControl>
+															<Checkbox
+																checked={
+																	field.value
+																		? field.value.includes(
+																				item.id
+																		  )
+																		: false
+																}
+																onCheckedChange={(
+																	checked
+																) => {
+																	const updatedValue =
+																		checked
+																			? [
+																					...(field.value ||
+																						[]),
+																					item.id,
+																			  ]
+																			: (
+																					field.value ||
+																					[]
+																			  ).filter(
+																					(
+																						value
+																					) =>
+																						value !==
+																						item.id
+																			  );
+																	field.onChange(
+																		updatedValue
+																	);
+																}}
+															/>
+														</FormControl>
+														<FormLabel className='font-normal'>
+															{
+																item.label
+															}
+														</FormLabel>
+													</FormItem>
+												);
+											}}
+										/>
+									))}
+									<FormMessage />
+								</FormItem>
+							)}
+						/>
+						<FormField
+							control={form.control}
+							name='occupation'
+							render={({ field }) => (
+								<FormItem className=''>
+									<FormLabel>
+										Current occupation or job
+										title?
+									</FormLabel>
+									<FormControl>
+										<Input
+											{...field}
+											disabled={isPending}
+										/>
+									</FormControl>
+									<FormMessage />
+								</FormItem>
+							)}
+						/>
+						<FormField
+							control={form.control}
+							name='about'
+							render={({ field }) => (
+								<FormItem className='lg:col-span-2'>
+									<FormLabel>
+										Is there anything else you
+										would like to tell us about
+										yourself?
+									</FormLabel>
+									<FormControl>
+										<Textarea
+											{...field}
+											placeholder={
+												'Type here...'
+											}
+											disabled={isPending}
+										/>
+									</FormControl>
+									<FormMessage />
+								</FormItem>
+							)}
+						/>
+						<div className='lg:col-span-2'>
+							<FormError message='Error' />
+						</div>
+						<div className='lg:col-span-2'>
+							<FormSuccess message='Success' />
+						</div>
+						<Button
+							type='submit'
+							className='lg:col-span-2'
+						>
+							SUBMIT
+						</Button>
 					</div>
 				</form>
 			</Form>
-			{/* <FormError message='Error' />
-			<FormSuccess message='Success' /> */}
 		</div>
 	);
 }

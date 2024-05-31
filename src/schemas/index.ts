@@ -12,4 +12,14 @@ export const BecomeAnAgentSchema = z.object({
 	transportation: z.string(),
 	fullparttime: z.string(),
 	commission: z.string(),
+	workexperience: z.string(),
+	motivation: z.string(),
+	street: z.string(),
+	occupation: z.string(),
+	hearaboutus: z
+		.array(z.string())
+		.refine((value) => value.some((item) => item), {
+			message: 'You have to select at least one item.',
+		}),
+	about: z.string(),
 });
