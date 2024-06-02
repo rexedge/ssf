@@ -12,14 +12,14 @@ interface HeroSectionProps {
 
 const Hero: React.FC<HeroSectionProps> = ({ title, description, image }) => {
 	return (
-		<div className='relative bg-gray-900 text-white pb-16 min-h-[100svh] lg:min-h-[50svh]'>
+		<div className='relative bg-gray-900 text-white pb-16 min-h-[100svh] lg:min-h-[60svh]'>
 			<div className='absolute inset-0 w-full h-full'>
 				<Image
 					src={image}
 					alt='Hero Image'
 					height={1080}
 					width={1080}
-					className=' object-cover object-top w-full h-full'
+					className=' object-cover object-center w-full h-full'
 				/>
 				<div className='absolute inset-0 bg-black opacity-50' />
 			</div>

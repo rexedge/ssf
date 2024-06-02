@@ -216,19 +216,25 @@ export const PARTNERS = [
 		id: '8',
 		name: 'Two insured on One Policy',
 		image: '/choice/39.png',
-		href: '/two-insured-on-one-policy',
+		href: '#',
 	},
 	{
 		id: '9',
 		name: 'Build an Agency Cash Flow',
-		image: '/choice/40.png',
-		href: '/build-an-agency',
+		image: '/building-an-agency.jpg',
+		href: '/become-an-agent',
 	},
 	{
 		id: '10',
-		name: 'Long Term Care',
-		image: '/choice/37.png',
-		href: '/long-term-care',
+		name: 'Mortgage Protection',
+		image: '/mortgage-protection.jpg',
+		href: '/mortgage-protection',
+	},
+	{
+		id: '11',
+		name: 'Infinite Banking',
+		image: '/infinite-banking-bank.png',
+		href: '/infinite-banking',
 	},
 ] as const;
 
@@ -283,4 +289,23 @@ export const TRUSTED_PARTNERS_LOGO = [
 	{ src: '/choice/27.png', name: 'Allianz' },
 	{ src: '/choice/28.png', name: 'Athene' },
 	{ src: '/choice/29.jpg', name: 'National Western Life Insurance Company' },
+] as const;
+
+export const PRODUCT_DETAILS: {
+	id: string;
+	slug: string;
+	name: string;
+	image: string;
+	hero_image: string;
+	description: string;
+}[] = [
+	{
+		id: '001',
+		slug: 'infinite-banking-test',
+		name: 'Infinite Banking',
+		image: '/infinite-banking.png',
+		hero_image: '/infinite-banking.png',
+		description:
+			'Infinite banking is the practice of over-funding a permanent life insurance policy so you can borrow against its cash value.',
+	},
 ] as const;

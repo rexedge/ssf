@@ -2,13 +2,14 @@ import nodemailer from 'nodemailer';
 
 export default async function ContactAPI(req, res) {
 	const user = process.env.GMAIL_USER;
-	const { name, email, message, subject } = req.body;
+	const { name, email, message, subject, need } = req.body;
 
 	const data = {
 		name,
 		email,
 		message,
 		subject,
+		need
 	};
 	console.log(data);
 
@@ -24,10 +25,10 @@ export default async function ContactAPI(req, res) {
 			},
 		});
 
-		// Sending the first email to info@smartstepssolution.com
+		// Sending the first email to info@smartstepssolutions.com
 		const mail = await transporter.sendMail({
-			from: 'info@smartstepssolution.com',
-			to: 'info@smartstepssolution.com',
+			from: 'info@smartstepssolutions.com',
+			to: 'info@smartstepssolutions.com',
 			replyTo: email,
 			subject: subject,
 			html: `
@@ -48,9 +49,9 @@ export default async function ContactAPI(req, res) {
 		`;
 
 		const acknowledgmentMail = await transporter.sendMail({
-			from: 'info@smartstepssolution.com',
+			from: 'info@smartstepssolutions.com',
 			to: email,
-			replyTo: 'info@smartstepssolution.com',
+			replyTo: 'info@smartstepssolutions.com',
 			subject: 'Acknowledgment - We have received your message',
 			html: acknowledgmentTemplate,
 		});

@@ -12,8 +12,7 @@ export default function Contacts() {
 				title='Contact Us'
 				description="We're excited to hear from you! Whether you
 				have questions, inquiries, or would like to schedule a
-				consultation, our team is here to assist you. You can reach
-				us through any of the below methods"
+				consultation, our team is here to assist you."
 			/>
 			<ContactUs />
 			<MapView location={MAP_LOCATION} />
