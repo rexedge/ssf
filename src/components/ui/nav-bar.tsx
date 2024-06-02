@@ -362,6 +362,14 @@ export default function NavBar() {
 						>
 							<Link href={'/about'}>ABOUT US</Link>
 						</Button>
+						<Button
+							variant={'outline'}
+							asChild
+						>
+							<Link href={'/our-process'}>
+								OUR PROCESS
+							</Link>
+						</Button>
 					</div>
 				</div>
 				<Button
@@ -623,6 +631,14 @@ export default function NavBar() {
 								className='mb-6'
 							>
 								<Link href={'/about'}>ABOUT US</Link>
+							</SheetClose>
+							<SheetClose
+								asChild
+								className='mb-6'
+							>
+								<Link href={'/our-process'}>
+									OUR PROCESS
+								</Link>
 							</SheetClose>
 							<SheetClose
 								asChild

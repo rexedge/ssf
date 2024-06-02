@@ -86,10 +86,8 @@ export default function BecomeAnAgent() {
 		<>
 			<Hero
 				image='/become-an-agent.jpg'
-				title='Income Stream Opportunity'
-				description="We're excited to hear from you! Whether you
-				have questions, inquiries, or would like to schedule a
-				consultation, our team is here to assist you."
+				title='Become An Agent'
+				description='Income Stream Opportunity'
 			/>
 			<div className='max-w-3xl mx-auto  min-h-fit w-screen flex flex-col py-5 gap-5'>
 				<Form {...form}>
