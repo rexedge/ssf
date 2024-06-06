@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function Testimonials() {
 	return (
-		<section className='flex flex-col gap-6 p-4 md:p-6 lg:p-8'>
+		<section className='flex flex-col gap-6 p-4 md:p-6 lg:p-8 max-w-7xl mx-auto'>
 			<div className='space-y-4 text-center'>
 				<div className='inline-block rounded-lg bg-tertiary/20 text-tertiary font-bold px-3 py-1 text-sm dark:bg-tertiary'>
 					Testimonials

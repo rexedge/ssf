@@ -1,10 +1,10 @@
 'use client';
 
-import { zodResolver } from '@hookform/resolvers/zod';
-import React, { useState, useTransition } from 'react';
-import { useForm } from 'react-hook-form';
-import { toast } from 'sonner';
-import * as z from 'zod';
+import { submitBecomeAnAgentForm } from '@/actions/become-an-agent';
+import FormError from '@/components/ui/FormError';
+import FormSuccess from '@/components/ui/FormSuccess';
+import { Button } from '@/components/ui/button';
+import { Checkbox } from '@/components/ui/checkbox';
 import {
 	Form,
 	FormControl,
@@ -13,17 +13,16 @@ import {
 	FormLabel,
 	FormMessage,
 } from '@/components/ui/form';
-import { LoaderIcon } from 'lucide-react';
+import Hero from '@/components/ui/hero';
 import { Input } from '@/components/ui/input';
-import { Button } from '@/components/ui/button';
-import FormError from '@/components/ui/FormError';
-import FormSuccess from '@/components/ui/FormSuccess';
-import { BecomeAnAgentSchema } from '@/schemas';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Textarea } from '@/components/ui/textarea';
-import { Checkbox } from '@/components/ui/checkbox';
-import { submitBecomeAnAgentForm } from '@/actions/become-an-agent';
-import Hero from '@/components/ui/hero';
+import { BecomeAnAgentSchema } from '@/schemas';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { useState, useTransition } from 'react';
+import { useForm } from 'react-hook-form';
+import { toast } from 'sonner';
+import * as z from 'zod';
 
 const hearaboutus = [
 	{
@@ -61,12 +60,13 @@ export default function BecomeAnAgent() {
 		resolver: zodResolver(BecomeAnAgentSchema),
 		defaultValues: {
 			email: '',
+			about: '',
+			age: '',
 		},
 	});
 	const onSubmit = (values: z.infer<typeof BecomeAnAgentSchema>) => {
 		setError('');
 		setSuccess('');
-		const { email } = values;
 
 		startTransition(() => {
 			submitBecomeAnAgentForm(values).then((data) => {

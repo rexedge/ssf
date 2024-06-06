@@ -216,7 +216,7 @@ export const PARTNERS = [
 		id: '8',
 		name: 'Two insured on One Policy',
 		image: '/choice/39.png',
-		href: '#',
+		href: 'two-insured-on-one-policy',
 	},
 	{
 		id: '9',

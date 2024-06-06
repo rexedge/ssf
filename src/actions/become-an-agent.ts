@@ -2,6 +2,10 @@
 
 import { BecomeAnAgentSchema } from '@/schemas';
 import * as z from 'zod';
+import { Resend } from 'resend';
+import { sendBecomeAnAgentMail } from '@/lib/mail';
+
+export type IBecomeAnAgentSchema = z.infer<typeof BecomeAnAgentSchema>;
 
 export const submitBecomeAnAgentForm = async (
 	values: z.infer<typeof BecomeAnAgentSchema>
@@ -12,42 +16,8 @@ export const submitBecomeAnAgentForm = async (
 		return { error: 'Invalid Fields' };
 	}
 
-	const {
-		email,
-		phone,
-		about,
-		age,
-		city,
-		commission,
-		experience,
-		fname,
-		fullparttime,
-		hearaboutus,
-		insurance,
-		license,
-		lname,
-		motivation,
-		occupation,
-		postal,
-		state,
-		street,
-		transportation,
-		workexperience,
-	} = validatedFields.data;
-
 	try {
-		console.log(validatedFields.data);
-		// await sendWaitlistMail({
-		// 	email: userInWaitlist.email,
-		// 	referrerId: userInWaitlist.id,
-		// }).then(async () => {
-		// 	await db.waitlist.update({
-		// 		where: { id: userInWaitlist.id },
-		// 		data: {
-		// 			emailSent: new Date(),
-		// 		},
-		// 	});
-		// });
+		await sendBecomeAnAgentMail(validatedFields.data);
 
 		return { success: 'Submitted successfully' };
 	} catch (error) {

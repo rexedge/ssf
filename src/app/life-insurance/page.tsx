@@ -81,6 +81,15 @@ export default function LifeInsurance() {
 							coverage. Combines the benefits of term and
 							whole life insurance.
 						</p>
+						<h3>
+							<Link href='/living-benefit'>
+								Life Insurance With Living Benefit
+							</Link>
+						</h3>
+						<p>
+							Living Benefits life insurance represents a
+							modern twist on life insurance coverage.
+						</p>
 					</div>
 				</section>
 
