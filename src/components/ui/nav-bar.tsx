@@ -117,7 +117,7 @@ const SERVICES_LIST: {
 }[] = [
 	{
 		title: 'Retirement Plan',
-		href: '/retirement-plan',
+		href: '/annuity',
 		description: 'Learn more about our retirement plan service.',
 	},
 	{

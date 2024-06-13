@@ -14,7 +14,7 @@ import {
 } from '@react-email/components';
 import * as React from 'react';
 
-export const BecomeAnAgentResponseEmail = () => (
+export const ContactUsResponseEmail = () => (
 	<Tailwind
 		config={{
 			theme: {
@@ -29,9 +29,9 @@ export const BecomeAnAgentResponseEmail = () => (
 	>
 		<Html>
 			<Head>
-				<title>Become An Agent</title>
+				<title>Contact Us</title>
 			</Head>
-			<Preview>We will get in touch with you soon!</Preview>
+			<Preview>We will get in touch will you soon</Preview>
 			<Body className='p-0 m-0'>
 				<Section className='h-32 max-w-xl mx-auto w-full grid place-items-center mb-5'>
 					<Img
@@ -42,15 +42,14 @@ export const BecomeAnAgentResponseEmail = () => (
 				<Container>
 					<Section style={box}>
 						<Text>
-							Thanks for submitting your information. Our
-							agent will reach out to you shortly for your
-							onboarding process!
+							Thanks for reaching out to us. Our agent will
+							reach out to you shortly.
 						</Text>
 						<Hr style={hr} />
 						<Text>
 							If you want more information, visit our{' '}
 							<Link
-								href='ContactUsResponseEmail'
+								href='https://smartstepssolutions.com'
 								className='text-accent'
 							>
 								website
@@ -71,12 +70,19 @@ export const BecomeAnAgentResponseEmail = () => (
 	</Tailwind>
 );
 
-export default BecomeAnAgentResponseEmail;
+export default ContactUsResponseEmail;
 
 const main = {
 	backgroundColor: '#f6f9fc',
 	fontFamily:
 		'-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif',
+};
+
+const container = {
+	backgroundColor: '#ffffff',
+	margin: '0 auto',
+	padding: '20px 0 48px',
+	marginBottom: '64px',
 };
 
 const box = {
@@ -86,4 +92,35 @@ const box = {
 const hr = {
 	borderColor: '#e6ebf1',
 	margin: '20px 0',
+};
+
+const paragraph = {
+	color: '#525f7f',
+
+	fontSize: '16px',
+	lineHeight: '24px',
+	textAlign: 'left' as const,
+};
+
+const anchor = {
+	color: '#556cd6',
+};
+
+const button = {
+	backgroundColor: '#656ee8',
+	borderRadius: '5px',
+	color: '#fff',
+	fontSize: '16px',
+	fontWeight: 'bold',
+	textDecoration: 'none',
+	textAlign: 'center' as const,
+	display: 'block',
+	width: '100%',
+	padding: '10px',
+};
+
+const footer = {
+	color: '#8898aa',
+	fontSize: '12px',
+	lineHeight: '16px',
 };

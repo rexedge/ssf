@@ -609,8 +609,8 @@ export default function BecomeAnAgent() {
 								)}
 							/>
 							<FormField
-								control={form.control}
 								name='hearaboutus'
+								control={form.control}
 								render={({ field }) => (
 									<FormItem className='lg:col-span-2'>
 										<FormLabel>

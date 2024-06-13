@@ -26,3 +26,11 @@ export const BecomeAnAgentSchema = z.object({
 		}),
 	about: z.string(),
 });
+
+export const ContactUsSchema = z.object({
+	email: z.string().email(),
+	name: z.string().min(5, { message: 'Enter valid name' }),
+	subject: z.string().min(5, { message: 'Enter valid Subject' }),
+	message: z.string().min(5, { message: 'Enter valid message' }),
+	need: z.string().min(5, { message: 'Choose one' }),
+});

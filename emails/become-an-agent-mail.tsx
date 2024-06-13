@@ -54,7 +54,7 @@ export const BecomeAnAgentMail = ({
 			<Head>
 				<title>Become An Agent</title>
 			</Head>
-			<Preview>Log in with this magic link</Preview>
+			<Preview>Become an agent</Preview>
 			<Body className='p-0 m-0'>
 				<Section className='h-32 max-w-xl mx-auto w-full grid place-items-center mb-5'>
 					<Img
