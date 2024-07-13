@@ -1,5 +1,6 @@
 import Hero from '@/components/ui/hero';
 import { COMPANY_PROFILE, PARTNERS } from '@/utils/const';
+import Image from 'next/image';
 import React from 'react';
 
 export default function LivingBenefit() {
@@ -11,17 +12,29 @@ export default function LivingBenefit() {
 				image={'/living-benefit.jpg'}
 			/>
 			<div className='prose lg:prose-lg prose-orange max-w-5xl mx-auto py-10'>
-				<h2>What is Living Benefits Life Insurance?</h2>
-				<p>
-					Living Benefits life insurance represents a modern
-					twist on life insurance coverage. A policy featuring
-					living benefits riders (also known as accelerated
-					benefit riders, or ABRs) will grant “early access” to
-					the policy&apos;s death benefit while the insured party
-					is still alive if they are to suffer any of the
-					triggering conditions contained in that policy&apos;s
-					living benefits riders.
-				</p>
+				<div className='grid grid-cols-2 gap-5'>
+					<Image
+						className='h-full w-full object-cover rounded-lg'
+						height={1080}
+						width={1080}
+						src='/life-insurance.webp'
+						alt='Types of Life Insurance'
+					/>
+					<div className=''>
+						<h2>What is Living Benefits Life Insurance?</h2>
+						<p>
+							Living Benefits life insurance represents a
+							modern twist on life insurance coverage. A
+							policy featuring living benefits riders (also
+							known as accelerated benefit riders, or ABRs)
+							will grant “early access” to the
+							policy&apos;s death benefit while the insured
+							party is still alive if they are to suffer
+							any of the triggering conditions contained in
+							that policy&apos;s living benefits riders.
+						</p>
+					</div>
+				</div>
 				<h2>Benefits of Living Benefits Life Insurance</h2>
 				<ul>
 					<li>

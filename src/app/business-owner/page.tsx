@@ -1,4 +1,5 @@
 import Hero from '@/components/ui/hero';
+import Image from 'next/image';
 
 export default function BusinessOwner() {
 	return (
@@ -9,15 +10,26 @@ export default function BusinessOwner() {
 				image={'/business-owner.png'}
 			/>
 			<div className='prose lg:prose-lg prose-orange max-w-5xl mx-auto py-10'>
-				<h2>BUSINESS OWNER INSURANCE</h2>
-				<h3 className=''>EXECUTIVE BONUS PLAN</h3>
-				<p>
-					Executive bonus plans can be a valuable tool for
-					businesses seeking to attract, retain, and motivate key
-					employees by offering them additional compensation and
-					long-term benefits.
-				</p>
-				<ul>
+				<div className='grid grid-cols-2 gap-5 container'>
+					<Image
+						className='h-full w-full object-cover rounded-lg'
+						height={1080}
+						width={1080}
+						src='/life-insurance.webp'
+						alt='Types of Life Insurance'
+					/>
+					<div className=''>
+						<h2 className=''>EXECUTIVE BONUS PLAN</h2>
+						<p>
+							Executive bonus plans can be a valuable tool
+							for businesses seeking to attract, retain,
+							and motivate key employees by offering them
+							additional compensation and long-term
+							benefits.
+						</p>
+					</div>
+				</div>
+				<ul className='pt-10'>
 					<li>
 						<span className='font-bold'>
 							Employee Retention:
@@ -61,12 +73,23 @@ export default function BusinessOwner() {
 						executives in retirement.
 					</li>
 				</ul>
-				<h3 className=''>KEY PERSON INSURANCE</h3>
-				<p>
-					Key person insurance offer unique benefits for
-					businesses:
-				</p>
-				<ul>
+				<div className='grid grid-cols-2 gap-5 container'>
+					<Image
+						className='h-full w-full object-cover rounded-lg'
+						height={1080}
+						width={1080}
+						src='/life-insurance.webp'
+						alt='Types of Life Insurance'
+					/>
+					<div className=''>
+						<h2 className=''>KEY PERSON INSURANCE</h2>
+						<p>
+							Key person insurance offer unique benefits
+							for businesses:
+						</p>
+					</div>
+				</div>
+				<ul className='pt-10'>
 					<li>
 						<span className='font-bold'>
 							Financial Protection:

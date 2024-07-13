@@ -1,4 +1,5 @@
 import Hero from '@/components/ui/hero';
+import Image from 'next/image';
 
 export default function Annuity() {
 	return (
@@ -9,19 +10,32 @@ export default function Annuity() {
 				image={'/annuity.webp'}
 			/>
 			<div className='prose lg:prose-lg prose-orange max-w-5xl mx-auto py-10'>
-				<h2 className=''>ANNUITY</h2>
-				<p>Annuities can help meet retirement needs</p>
-				<p>
-					You protect your car, your home and even your life with
-					insurance, but are you leaving your retirement income
-					unprotected? With potential for tax-deferred growth and
-					a guaranteed income stream, annuities can be important
-					to your retirement objectives. Annuities can help you
-					grow — and protect — your retirement income. Work with
-					one of our financial professional to find out if an
-					annuity may be right for you.
-				</p>
-				<p>
+				<div className='grid grid-cols-2 gap-5 container'>
+					<Image
+						className='h-full w-full object-cover rounded-lg'
+						height={1080}
+						width={1080}
+						src='/life-insurance.webp'
+						alt='Types of Life Insurance'
+					/>
+					<div className=''>
+						<h2 className=''>ANNUITY</h2>
+						<p>Annuities can help meet retirement needs</p>
+						<p>
+							You protect your car, your home and even your
+							life with insurance, but are you leaving your
+							retirement income unprotected? With potential
+							for tax-deferred growth and a guaranteed
+							income stream, annuities can be important to
+							your retirement objectives. Annuities can
+							help you grow — and protect — your retirement
+							income. Work with one of our financial
+							professional to find out if an annuity may be
+							right for you.
+						</p>
+					</div>
+				</div>
+				<p className='pt-10'>
 					An annuity is essentially a contract between you and an
 					insurance company. You buy an annuity by giving an
 					insurance company either a single lump sum or making

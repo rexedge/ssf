@@ -1,4 +1,5 @@
 import Hero from '@/components/ui/hero';
+import Image from 'next/image';
 
 export default function WholeLife() {
 	return (
@@ -9,18 +10,32 @@ export default function WholeLife() {
 				image={'/wholelife.jpg'}
 			/>
 			<div className='prose lg:prose-lg prose-orange max-w-5xl mx-auto py-10'>
-				<h2>What is Whole Life Insurance?</h2>
-				<p>
-					With whole life insurance, you’re covered for as long
-					as you live. No need to worry about your premiums
-					increasing; they’re set for the life of your policy.
-				</p>
-				<p>
-					In addition to a guaranteed death benefit upon your
-					passing, there are living benefits you may have access
-					to while living. Your cash value account can build over
-					time on a tax-deferred basis.
-				</p>
+				<div className='grid grid-cols-2 gap-5 container'>
+					<Image
+						className='h-full w-full object-cover rounded-lg'
+						height={1080}
+						width={1080}
+						src='/life-insurance.webp'
+						alt='Types of Life Insurance'
+					/>
+					<div className=''>
+						<h2>What is Whole Life Insurance?</h2>
+						<p>
+							With whole life insurance, you’re covered for
+							as long as you live. No need to worry about
+							your premiums increasing; they’re set for the
+							life of your policy.
+						</p>
+						<p>
+							In addition to a guaranteed death benefit
+							upon your passing, there are living benefits
+							you may have access to while living. Your
+							cash value account can build over time on a
+							tax-deferred basis.
+						</p>
+					</div>
+				</div>
+
 				<h2>Benefits of Whole Life Insurance</h2>
 				<ul>
 					<li>

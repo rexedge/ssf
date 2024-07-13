@@ -1,4 +1,5 @@
 import Hero from '@/components/ui/hero';
+import Image from 'next/image';
 
 export default function MortgageProtection() {
 	return (
@@ -9,16 +10,30 @@ export default function MortgageProtection() {
 				image={'/mortgage-protection-plan.jpg'}
 			/>
 			<div className='prose lg:prose-lg prose-orange max-w-5xl mx-auto py-10'>
-				<h2>MORTGAGE PROTECTION PLAN</h2>
-				<p>
-					Mortgage protection plan is a type of life insurance
-					designed to pay off your mortgage balance in the event
-					of death, disability, or critical illness. Mortgage
-					protection insurance can be a valuable tool for
-					homeowners looking to protect their family and their
-					home in the event of unforeseen circumstances.
-				</p>
-				<p>
+				<div className='grid grid-cols-2 gap-5 container'>
+					<Image
+						className='h-full w-full object-cover rounded-lg'
+						height={1080}
+						width={1080}
+						src='/life-insurance.webp'
+						alt='Types of Life Insurance'
+					/>
+					<div className=''>
+						<h2>MORTGAGE PROTECTION PLAN</h2>
+						<p>
+							Mortgage protection plan is a type of life
+							insurance designed to pay off your mortgage
+							balance in the event of death, disability, or
+							critical illness. Mortgage protection
+							insurance can be a valuable tool for
+							homeowners looking to protect their family
+							and their home in the event of unforeseen
+							circumstances.
+						</p>
+					</div>
+				</div>
+
+				<p className='pt-10'>
 					Here are some key benefits of mortgage protection
 					insurance:
 				</p>

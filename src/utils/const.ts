@@ -171,12 +171,6 @@ export const PARTNERS = [
 		href: '/estate-planning',
 	},
 	{
-		id: '1',
-		name: 'Debt Relief',
-		image: '/choice/31.png',
-		href: '/debt-relief',
-	},
-	{
 		id: '2',
 		name: 'College Savings Fund',
 		image: '/choice/32.jpg',

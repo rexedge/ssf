@@ -1,4 +1,5 @@
 import Hero from '@/components/ui/hero';
+import Image from 'next/image';
 import React from 'react';
 
 export default function TwoInsuredOnOnePolicy() {
@@ -10,15 +11,28 @@ export default function TwoInsuredOnOnePolicy() {
 				image={'/two-insured-on-one-policy.jpg'}
 			/>
 			<div className='prose lg:prose-lg prose-orange max-w-5xl mx-auto py-10'>
-				<h2>What is Two insured on one policy</h2>
-				<p>
-					&quot;Two insured on one policy&quot; allows two
-					individuals to be covered under a single life insurance
-					policy. This arrangement can be particularly
-					advantageous for married couples, business partners, or
-					even family members, offering convenience and potential
-					cost savings.
-				</p>
+				<div className='grid grid-cols-2 gap-5 container'>
+					<Image
+						className='h-full w-full object-cover rounded-lg'
+						height={1080}
+						width={1080}
+						src='/life-insurance.webp'
+						alt='Types of Life Insurance'
+					/>
+					<div className=''>
+						<h2>What is Two insured on one policy</h2>
+						<p>
+							&quot;Two insured on one policy&quot; allows
+							two individuals to be covered under a single
+							life insurance policy. This arrangement can
+							be particularly advantageous for married
+							couples, business partners, or even family
+							members, offering convenience and potential
+							cost savings.
+						</p>
+					</div>
+				</div>
+
 				<h2>Benefits of a Two insured on one policy</h2>
 				<ul>
 					<li>

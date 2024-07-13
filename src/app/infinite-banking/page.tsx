@@ -1,4 +1,5 @@
 import Hero from '@/components/ui/hero';
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -10,25 +11,39 @@ export default function InfiniteBanking() {
 				image='/infinite-banking.png'
 				title='Infinite Banking'
 			/>
-			<div className='prose lg:prose-lg prose-orange mx-auto py-10'>
-				<h2>Understanding Infinite Banking</h2>
-				<p>
-					Infinite banking involves the strategic over-funding of
-					a permanent life insurance policy, allowing for
-					borrowing against its accumulated cash value. It serves
-					as an alternative financing avenue compared to
-					traditional loans.
-				</p>
-				<p>
-					This approach offers numerous benefits, such as
-					convenient access to funds during emergencies,
-					adaptable loan terms, and potential tax advantages.
-					However, it is a nuanced strategy demanding meticulous
-					planning to maximize its advantages. We strongly advise
-					consulting a reliable financial advisor before
-					embarking on infinite banking.
-				</p>
-				<p>
+			<div className='prose lg:prose-lg prose-orange max-w-5xl mx-auto py-10'>
+				<div className='grid grid-cols-2 gap-5'>
+					<Image
+						className='h-full w-full object-cover rounded-lg'
+						height={1080}
+						width={1080}
+						src='/life-insurance.webp'
+						alt='Types of Life Insurance'
+					/>
+					<div className=''>
+						<h2>Understanding Infinite Banking</h2>
+						<p>
+							Infinite banking involves the strategic
+							over-funding of a permanent life insurance
+							policy, allowing for borrowing against its
+							accumulated cash value. It serves as an
+							alternative financing avenue compared to
+							traditional loans.
+						</p>
+						<p>
+							This approach offers numerous benefits, such
+							as convenient access to funds during
+							emergencies, adaptable loan terms, and
+							potential tax advantages. However, it is a
+							nuanced strategy demanding meticulous
+							planning to maximize its advantages. We
+							strongly advise consulting a reliable
+							financial advisor before embarking on
+							infinite banking.
+						</p>
+					</div>
+				</div>
+				<p className='pt-10'>
 					The mechanics of infinite banking hinge on several
 					distinctive features of life insurance:
 				</p>

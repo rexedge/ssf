@@ -1,4 +1,5 @@
 import Hero from '@/components/ui/hero';
+import Image from 'next/image';
 
 export default function TermLife() {
 	return (
@@ -9,20 +10,32 @@ export default function TermLife() {
 				image={'/termlife.webp'}
 			/>
 			<div className='prose lg:prose-lg prose-orange max-w-5xl mx-auto py-10'>
-				<h2>What is Term Life Insurance?</h2>
-				<p>
-					Term life insurance can be an affordable way to provide
-					some financial protection for an isolated period of
-					time. Term life insurance coverage is what it sounds
-					like: life insurance for a specified policy term. This
-					coverage allows you to choose a term of years up front,
-					usually ranging from 10-30 years.
-				</p>
-				<p>
-					If you die while the policy is in use, the insurance
-					company pays death benefits to your named
-					beneficiaries.
-				</p>
+				<div className='grid grid-cols-2 gap-5 container'>
+					<Image
+						className='h-full w-full object-cover rounded-lg'
+						height={1080}
+						width={1080}
+						src='/life-insurance.webp'
+						alt='Types of Life Insurance'
+					/>
+					<div className=''>
+						<h2>What is Term Life Insurance?</h2>
+						<p>
+							Term life insurance can be an affordable way
+							to provide some financial protection for an
+							isolated period of time. Term life insurance
+							coverage is what it sounds like: life
+							insurance for a specified policy term. This
+							coverage allows you to choose a term of years
+							up front, usually ranging from 10-30 years.
+						</p>
+						<p>
+							If you die while the policy is in use, the
+							insurance company pays death benefits to your
+							named beneficiaries.
+						</p>
+					</div>
+				</div>
 				<h2>Benefits of Term Life Insurance</h2>
 				<ul>
 					<li>

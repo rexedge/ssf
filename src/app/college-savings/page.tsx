@@ -1,4 +1,5 @@
 import Hero from '@/components/ui/hero';
+import Image from 'next/image';
 
 export default function CollegeSavings() {
 	return (
@@ -9,15 +10,30 @@ export default function CollegeSavings() {
 				image={'/college-savings-plan.jpg'}
 			/>
 			<div className='prose lg:prose-lg prose-orange max-w-5xl mx-auto py-10'>
-				<h1 className='text-2xl '>COLLEGE SAVINGS PLAN</h1>
-				<p>
-					Account 7702(b) can be a secured and reliable college
-					saving plan for your kids to secure their loan free
-					education and financial future. It has numerous
-					benefits compare to Account 529 plans or Coverdell
-					Education Savings Accounts
-				</p>
-				<p>
+				<div className='grid grid-cols-2 gap-5 container'>
+					<Image
+						className='h-full w-full object-cover rounded-lg'
+						height={1080}
+						width={1080}
+						src='/life-insurance.webp'
+						alt='Types of Life Insurance'
+					/>
+					<div className=''>
+						<h2 className='text-2xl '>
+							COLLEGE SAVINGS PLAN
+						</h2>
+						<p>
+							Account 7702(b) can be a secured and reliable
+							college saving plan for your kids to secure
+							their loan free education and financial
+							future. It has numerous benefits compare to
+							Account 529 plans or Coverdell Education
+							Savings Accounts
+						</p>
+					</div>
+				</div>
+
+				<p className='pt-10'>
 					These are some of the potential benefits of Account
 					7702(b) for your kid's college saving plan:
 				</p>

@@ -1,5 +1,6 @@
 import Hero from '@/components/ui/hero';
 import { PARTNERS } from '@/utils/const';
+import Image from 'next/image';
 import React from 'react';
 
 export default function Iul() {
@@ -11,14 +12,28 @@ export default function Iul() {
 				image={'/iul.jpg'}
 			/>
 			<div className='prose lg:prose-lg prose-orange max-w-5xl mx-auto py-10'>
-				<h1 className='text-2xl '>INDEXED UNIVERSAL LIFE</h1>
-				<p>
-					Indexed universal life insurance {`(IUL)`} is a type of
-					permanent life insurance policy that combines the death
-					benefit protection of traditional universal life
-					insurance with the potential for cash value growth
-				</p>
-				<ul>
+				<div className='grid grid-cols-2 gap-5 container'>
+					<Image
+						className='h-full w-full object-cover rounded-lg'
+						height={1080}
+						width={1080}
+						src='/life-insurance.webp'
+						alt='Types of Life Insurance'
+					/>
+					<div className=''>
+						<h2 className='text-2xl '>
+							INDEXED UNIVERSAL LIFE
+						</h2>
+						<p>
+							Indexed universal life insurance {`(IUL)`} is
+							a type of permanent life insurance policy
+							that combines the death benefit protection of
+							traditional universal life insurance with the
+							potential for cash value growth
+						</p>
+					</div>
+				</div>
+				<ul className='pt-10'>
 					<li>
 						<span className='font-bold'>
 							Cash Value Accumulation:
