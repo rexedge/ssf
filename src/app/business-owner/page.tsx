@@ -15,7 +15,7 @@ export default function BusinessOwner() {
 						className='h-full w-full object-cover rounded-lg'
 						height={1080}
 						width={1080}
-						src='/life-insurance.webp'
+						src='/executive-2.jpg'
 						alt='Types of Life Insurance'
 					/>
 					<div className=''>
@@ -78,7 +78,7 @@ export default function BusinessOwner() {
 						className='h-full w-full object-cover rounded-lg'
 						height={1080}
 						width={1080}
-						src='/life-insurance.webp'
+						src='/key-person-2.jpg'
 						alt='Types of Life Insurance'
 					/>
 					<div className=''>

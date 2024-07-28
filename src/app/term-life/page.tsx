@@ -10,12 +10,12 @@ export default function TermLife() {
 				image={'/termlife.webp'}
 			/>
 			<div className='prose lg:prose-lg prose-orange max-w-5xl mx-auto py-10'>
-				<div className='grid grid-cols-2 gap-5 container'>
+				<div className='grid grid-cols-2 gap-5 container mb-10'>
 					<Image
 						className='h-full w-full object-cover rounded-lg'
 						height={1080}
 						width={1080}
-						src='/life-insurance.webp'
+						src='/term-life-2.png'
 						alt='Types of Life Insurance'
 					/>
 					<div className=''>
@@ -29,13 +29,13 @@ export default function TermLife() {
 							coverage allows you to choose a term of years
 							up front, usually ranging from 10-30 years.
 						</p>
-						<p>
-							If you die while the policy is in use, the
-							insurance company pays death benefits to your
-							named beneficiaries.
-						</p>
 					</div>
 				</div>
+				<p>
+					If you die while the policy is in use, the insurance
+					company pays death benefits to your named
+					beneficiaries.
+				</p>
 				<h2>Benefits of Term Life Insurance</h2>
 				<ul>
 					<li>

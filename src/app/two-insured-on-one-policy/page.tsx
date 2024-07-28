@@ -16,7 +16,7 @@ export default function TwoInsuredOnOnePolicy() {
 						className='h-full w-full object-cover rounded-lg'
 						height={1080}
 						width={1080}
-						src='/life-insurance.webp'
+						src='/two-insured-on-one-2.jpg'
 						alt='Types of Life Insurance'
 					/>
 					<div className=''>

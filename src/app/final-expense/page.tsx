@@ -15,7 +15,7 @@ export default function FinalExpense() {
 						className='h-full w-full object-cover rounded-lg'
 						height={1080}
 						width={1080}
-						src='/life-insurance.webp'
+						src='/final-expense-2.jpg'
 						alt='Types of Life Insurance'
 					/>
 					<div className=''>
