@@ -2,7 +2,7 @@ export const COMPANY_PROFILE = {
 	name: 'Smart Steps Financial',
 	tagline: 'Empowering Your Financial Future',
 	address: 'Barnes Ridge Ln, Houston TX, 77072',
-	phone: '+1-346-270-5671',
+	phone: '+1-713-261-0396',
 	email: 'info@smartstepssolutions.com',
 	calendly: 'https://calendly.com/ssfinance',
 };
