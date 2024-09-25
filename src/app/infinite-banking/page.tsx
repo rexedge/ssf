@@ -10,7 +10,7 @@ export default function InfiniteBanking() {
 				image='/infinite-banking.png'
 				title='Infinite Banking'
 			/>
-			<div className='prose lg:prose-lg prose-orange max-w-5xl mx-auto py-10'>
+			<div className='prose lg:prose-lg prose-orange max-w-5xl mx-auto py-10 px-5'>
 				<div className='grid grid-cols-2 gap-5'>
 					<Image
 						className='h-full w-full object-cover rounded-lg'

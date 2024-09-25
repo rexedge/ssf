@@ -11,7 +11,7 @@ export default function LifeInsurance() {
 				description={`Protect What Matters Most with Life Insurance`}
 				image={'/life-insurance.jpg'}
 			/>
-			<div className='prose lg:prose-lg prose-orange max-w-5xl mx-auto py-10'>
+			<div className='prose lg:prose-lg prose-orange max-w-5xl mx-auto py-10 px-5'>
 				<p>
 					Life is full of uncertainties, but securing your
 					family&apos;s financial future doesn&apos;t have to be

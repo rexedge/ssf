@@ -9,7 +9,7 @@ export default function Iul() {
 				description={``}
 				image={'/iul.jpg'}
 			/>
-			<div className='prose lg:prose-lg prose-orange max-w-5xl mx-auto py-10'>
+			<div className='prose lg:prose-lg prose-orange max-w-5xl mx-auto py-10 px-5'>
 				<div className='grid lg:grid-cols-2 gap-5 container'>
 					<Image
 						className='h-full w-full object-cover rounded-lg order-last lg:order-first'

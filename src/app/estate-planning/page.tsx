@@ -9,7 +9,7 @@ export default function EstatePlanning() {
 				description={`Legacy planning protects your family and loved ones.`}
 				image={'/estate-and-legacy-planning-2.jpg'}
 			/>
-			<div className='prose lg:prose-lg prose-orange max-w-5xl mx-auto py-10'>
+			<div className='prose lg:prose-lg prose-orange max-w-5xl mx-auto py-10 px-5'>
 				<div className='grid lg:grid-cols-2 gap-5 container'>
 					<Image
 						className='h-full w-full object-cover rounded-lg order-last lg:order-first'

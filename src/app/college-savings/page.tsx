@@ -9,7 +9,7 @@ export default function CollegeSavings() {
 				description={`Reliable college saving plan for your kids to secure their loan free education.`}
 				image={'/college-savings-plan.jpg'}
 			/>
-			<div className='prose lg:prose-lg prose-orange max-w-5xl mx-auto py-10'>
+			<div className='prose lg:prose-lg prose-orange max-w-5xl mx-auto py-10 px-5'>
 				<div className='grid lg:grid-cols-2 gap-5 container'>
 					<Image
 						className='h-full w-full object-cover rounded-lg order-last lg:order-first'

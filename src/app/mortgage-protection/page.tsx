@@ -9,7 +9,7 @@ export default function MortgageProtection() {
 				description={`Pay off your mortgage balance in the event of death, disability, or critical illness.`}
 				image={'/mortgage-protection-plan.jpg'}
 			/>
-			<div className='prose lg:prose-lg prose-orange max-w-5xl mx-auto py-10'>
+			<div className='prose lg:prose-lg prose-orange max-w-5xl mx-auto py-10 px-5'>
 				<div className='grid lg:grid-cols-2 gap-5 container'>
 					<Image
 						className='h-full w-full object-cover rounded-lg order-last lg:order-first'
