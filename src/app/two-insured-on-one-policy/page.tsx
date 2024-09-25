@@ -1,6 +1,5 @@
 import Hero from '@/components/ui/hero';
 import Image from 'next/image';
-import React from 'react';
 
 export default function TwoInsuredOnOnePolicy() {
 	return (
@@ -11,7 +10,7 @@ export default function TwoInsuredOnOnePolicy() {
 				image={'/two-insured-on-one-policy.jpg'}
 			/>
 			<div className='prose lg:prose-lg prose-orange max-w-5xl mx-auto py-10'>
-				<div className='grid grid-cols-2 gap-5 container'>
+				<div className='grid lg:grid-cols-2 gap-5 container'>
 					<Image
 						className='h-full w-full object-cover rounded-lg'
 						height={1080}
