@@ -14,13 +14,13 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const sendBecomeAnAgentMail = async (options: IBecomeAnAgentSchema) => {
 	await resend.emails.send({
-		from: 'Smart Steps Solutions Team <support@smartstepssolutions.com>',
-		to: ['info@smartstepssolutions.com', 'ap.oyeniran@gmail.com'],
+		from: 'Smart Steps Solutions Team <info@smartstepssolutions.com>',
+		to: ['info@smartstepssolutions.com'],
 		subject: `${options.fname} ${options.lname} wants to become an agent`,
 		react: BecomeAnAgentMail(options),
 	});
 	await resend.emails.send({
-		from: 'Smart Steps Solutions Team <support@smartstepssolutions.com>',
+		from: 'Smart Steps Solutions Team <info@smartstepssolutions.com>',
 		to: options.email,
 		subject: `Request Received`,
 		react: BecomeAnAgentResponseEmail(),
@@ -29,13 +29,13 @@ export const sendBecomeAnAgentMail = async (options: IBecomeAnAgentSchema) => {
 
 export const contactUsMail = async (options: IContactUsSchema) => {
 	await resend.emails.send({
-		from: 'Smart Steps Solutions Team <support@smartstepssolutions.com>',
-		to: ['info@smartstepssolutions.com', 'ap.oyeniran@gmail.com'],
+		from: 'Smart Steps Solutions Team <info@smartstepssolutions.com>',
+		to: ['info@smartstepssolutions.com'],
 		subject: `${options.name} wants to ${options.need}`,
 		react: ContactUsMail(options),
 	});
 	await resend.emails.send({
-		from: 'Smart Steps Solutions Team <support@smartstepssolutions.com>',
+		from: 'Smart Steps Solutions Team <info@smartstepssolutions.com>',
 		to: options.email,
 		subject: `Request Received`,
 		react: ContactUsResponseEmail(),
