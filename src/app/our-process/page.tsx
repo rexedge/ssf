@@ -18,7 +18,7 @@ export default function OurProcess() {
 				description={``}
 				image={'/our-process.jpg'}
 			/>
-			<div className='prose lg:prose-lg prose-orange max-w-5xl mx-auto py-10 px-5'>
+			<div className='prose lg:prose-lg prose-orange max-w-5xl mx-auto py-10 px-5px-5'>
 				<p>
 					Thank you for stopping by. Our pro team at{' '}
 					<span className='text-tertiary font-bold'>

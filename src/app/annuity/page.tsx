@@ -9,10 +9,10 @@ export default function Annuity() {
 				description={`Annuities can help meet retirement needs`}
 				image={'/annuity.webp'}
 			/>
-			<div className='prose lg:prose-lg prose-orange max-w-5xl mx-auto py-10'>
+			<div className='prose lg:prose-lg prose-orange max-w-5xl mx-auto py-10 px-5'>
 				<div className='grid lg:grid-cols-2 gap-5 container'>
 					<Image
-						className='h-full w-full object-cover rounded-lg'
+						className='h-full w-full object-cover rounded-lg order-last lg:order-first'
 						height={1080}
 						width={1080}
 						src='/annuity-2.jpg'
@@ -35,7 +35,7 @@ export default function Annuity() {
 						</p>
 					</div>
 				</div>
-				<p className='pt-10'>
+				<p className='pt-10 px-5'>
 					An annuity is essentially a contract between you and an
 					insurance company. You buy an annuity by giving an
 					insurance company either a single lump sum or making

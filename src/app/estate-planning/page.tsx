@@ -12,7 +12,7 @@ export default function EstatePlanning() {
 			<div className='prose lg:prose-lg prose-orange max-w-5xl mx-auto py-10'>
 				<div className='grid lg:grid-cols-2 gap-5 container'>
 					<Image
-						className='h-full w-full object-cover rounded-lg'
+						className='h-full w-full object-cover rounded-lg order-last lg:order-first'
 						height={1080}
 						width={1080}
 						src='/estate-and-legacy-planning.jpg'
@@ -34,7 +34,9 @@ export default function EstatePlanning() {
 						</p>
 					</div>
 				</div>
-				<p className='pt-10'>Why talk about legacy planning?</p>
+				<p className='pt-10 px-5'>
+					Why talk about legacy planning?
+				</p>
 				<p>
 					Providing clients with a solid plan for after death is
 					the best way to protect their finances, people and even

@@ -1,7 +1,6 @@
 import Hero from '@/components/ui/hero';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
 
 export default function InfiniteBanking() {
 	return (
@@ -43,7 +42,7 @@ export default function InfiniteBanking() {
 						</p>
 					</div>
 				</div>
-				<p className='pt-10'>
+				<p className='pt-10 px-5'>
 					The mechanics of infinite banking hinge on several
 					distinctive features of life insurance:
 				</p>

@@ -12,7 +12,7 @@ export default function MortgageProtection() {
 			<div className='prose lg:prose-lg prose-orange max-w-5xl mx-auto py-10'>
 				<div className='grid lg:grid-cols-2 gap-5 container'>
 					<Image
-						className='h-full w-full object-cover rounded-lg'
+						className='h-full w-full object-cover rounded-lg order-last lg:order-first'
 						height={1080}
 						width={1080}
 						src='/mortgage-protection-2.jpg'
@@ -33,7 +33,7 @@ export default function MortgageProtection() {
 					</div>
 				</div>
 
-				<p className='pt-10'>
+				<p className='pt-10 px-5'>
 					Here are some key benefits of mortgage protection
 					insurance:
 				</p>
