@@ -22,10 +22,11 @@ export default function RootLayout({
 			<body
 				className={`${inter.className} min-h-screen w-screen overflow-x-clip`}
 			>
-				<NavBar />
+				{/* TODO: REMOVE COMMENTS FROM CODE BELOW */}
+				{/* <NavBar />
 				{children}
 				<Footer />
-				<Toaster richColors />
+				<Toaster richColors /> */}
 			</body>
 		</html>
 	);
